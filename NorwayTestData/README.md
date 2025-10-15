@@ -1,6 +1,8 @@
 # Norway text classification data
 This folder contatins code to collect and save data from the [Norwegian business register](https://virksomhet.brreg.no/nb/oppslag/enheter) for using in testing text classification models. Information on the API (in Norwedgian) can be found in the [Norwegian business register documentation](https://data.brreg.no/enhetsregisteret/api/dokumentasjon/no/index.html).
 
+This data is shared under the conditions of the license: [Norsk lisens for offentlige data](https://data.norge.no/nlod/no).
+
 ## Units
 The python script `create_data_norway.py´ creates a train (80 percent) and test (20 percent) dataset. The units are legal entities in the Norwegian business register that contain a valid NACE classification (rev.2.1). NACE groups with less than 5 units are excluded.
 
