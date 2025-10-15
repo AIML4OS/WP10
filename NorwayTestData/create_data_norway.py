@@ -1,7 +1,7 @@
 # This file contains python code to collect and process Norwegian data to use in testing text classification methods.
 # It collects information from the BRreg API on legal business units.
 
-# If not already installed:
+# If not already installed install Staistics Norway package for collecting classification names from API
 # ! pip install ssb-klass-python
 
 import csv
@@ -74,7 +74,7 @@ def download_csv_format(file_name: str, path: str = f'{os.environ["WORKSPACE_DIR
         print(f"Error downloading CSV: {e}")
         return None
 
-def process_csv(csv_filename, min_nace_count=5):
+def process_csv(csv_filename: str, min_nace_count: int = 5) -> pd.DataFrame:
     """
     Read and organise csv file of companies
     """
@@ -136,7 +136,7 @@ def process_csv(csv_filename, min_nace_count=5):
     return df[column_order]
 
 
-def get_description(series, klass_nr, level, language="en", date=date.today().strftime("%Y-%m-%d")):
+def get_description(series: pd.Series, klass_nr: int, level: int, language: str = "en", date_str: str = date.today().strftime("%Y-%m-%d")):
     """
     Maps a pandas Series of classification codes to their textual descriptions from a specified classification.
 
@@ -150,7 +150,7 @@ def get_description(series, klass_nr, level, language="en", date=date.today().st
         The hierarchical level of the classification to select descriptions from.
     language : str, optional
         Language code for the descriptions (default is "en" for English).
-    date : str, optional
+    date_str : str, optional
         The reference date for the classification version in "YYYY-MM-DD" format (default is today).
 
     Returns:
@@ -159,7 +159,7 @@ def get_description(series, klass_nr, level, language="en", date=date.today().st
         A Series with the same index as `series`, containing the mapped textual descriptions.
     """
     class_obj = get_classification(klass_nr)
-    class_codes = class_obj.get_codes(date, language = "en", select_level=level)
+    class_codes = class_obj.get_codes(date_str, language = "en", select_level=level)
     series_codes = series.map(class_codes.to_dict())
     return(series_codes)
 
@@ -174,11 +174,15 @@ if __name__ == "__main__":
     df_clean = process_csv(csv_filename, min_nace_count = 5)
 
     # Create test,train split
-    test, train = train_test_split(df_clean, stratify=df_clean.nace_21_code, train_size = 0.2, random_state = 42)
+    train, test = train_test_split(df_clean, stratify = df_clean.nace_21_code, train_size = 0.8, random_state = 42)
 
     print(f'Number of units in train data: {train.shape[0]}')
     print(f'Number of units in test data: {test.shape[0]}')
     print(f'Number of Nace groups in test data: {len(test.groupby("nace_21_code").count())}')
     print(f'Number of Nace groups in train data: {len(train.groupby("nace_21_code").count())}')
 
-    # Save data to WP10 bucket...
+    # Save data to WP10 bucket
+    filename_test = "s3://projet-aiml4os-wp10/NorwayData/test_norwaydata.parquet"
+    filename_train = "s3://projet-aiml4os-wp10/NorwayData/train_norwaydata.parquet"
+    test.to_parquet(filename_test) 
+    train.to_parquet(filename_train)
