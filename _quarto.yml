@@ -1,0 +1,35 @@
+project:
+  type: website
+  render: # Add HERE new chapters and new notebooks
+    - index.qmd
+    - chapters/chapter1.qmd
+    - notebooks/notebook1.qmd
+
+website:
+  page-navigation: true
+  title: "Template for training resources in Python"
+  site-url: "https://AIML4OS.github.io/AIML4OS-template-quarto-python/"
+  repo-url: "https://github.com/AIML4OS/AIML4OS-template-quarto-python"
+  repo-actions: [edit, source, issue]
+  sidebar:
+    search: true
+    contents: # Add HERE new chapters (but not the notebooks)
+      - href: index.qmd
+        text: Introduction
+      - href: chapters/chapter1.qmd
+        text: A complete example
+
+format:
+  html:
+    theme:
+      - cosmo
+    css: styles.css
+    toc: true
+    code-fold: true
+  ipynb:
+    output: true
+
+
+filters:
+  - export-metadata.lua
+

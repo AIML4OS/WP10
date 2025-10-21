@@ -1,0 +1,82 @@
+---
+title: "Quarto Basics"
+format: ipynb # This qmd file will be compiled as a jupyter notebook
+jupyter: python3
+---
+
+
+## A beautiful figure
+
+This chunk shows how you can produce a beautiful figure.
+
+```{python}
+#| label: fig-polar
+#| fig-cap: "A line plot on a polar axis"
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+r = np.arange(0, 2, 0.01)
+theta = 2 * np.pi * r
+fig, ax = plt.subplots(
+  subplot_kw = {'projection': 'polar'} 
+)
+ax.plot(theta, r)
+ax.set_rticks([0.5, 1, 1.5, 2])
+ax.grid(True)
+plt.show()
+```
+
+## A beautiful dataframe
+
+This section demonstrates how to create and display a simple pandas DataFrame.
+
+```{python}
+#| label: tbl-pandas
+#| tbl-cap: "Simple pandas DataFrame"
+
+import pandas as pd
+
+data = {
+    "Name": ["Alice", "Bob", "Charlie"],
+    "Age": [25, 30, 35],
+    "City": ["Paris", "Dublin", "Berlin"]
+}
+
+df = pd.DataFrame(data)
+df
+```
+
+## A more sophisticated table
+
+This section demonstrates how to create and display a simple pandas DataFrame.
+
+```{python}
+from great_tables import GT, html
+from great_tables.data import sza
+import polars as pl
+from polars import col as c
+import polars.selectors as cs
+
+sza_pivot = (
+    pl.from_pandas(sza)
+    .filter((c.latitude == "20") & (c.tst <= "1200"))
+    .select(pl.col("*").exclude("latitude"))
+    .drop_nulls()
+    .pivot(values="sza", index="month", on="tst", sort_columns=True)
+)
+
+(
+    GT(sza_pivot, rowname_col="month")
+    .data_color(
+        domain=[90, 0],
+        palette=["rebeccapurple", "white", "orange"],
+        na_color="white",
+    )
+    .tab_header(
+        title="Solar Zenith Angles from 05:30 to 12:00",
+        subtitle=html("Average monthly values at latitude of 20&deg;N."),
+    )
+    .sub_missing(missing_text="")
+)
+```

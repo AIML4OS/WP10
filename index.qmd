@@ -1,0 +1,105 @@
+---
+title: "Template for Python training material" # See below for multilingual resource
+format: html # This qmd file will be compiled as HTML only (no notebook)
+include-before-body:
+  - text: <img src="resources/cover/main2.png" style="max-width:900px;width:100%"><br>
+author:
+  - name: Public Statistician 1
+    url: https://github.com/publicstatistician1
+    email: Public.Statistician1@statistics.org
+  - name: Public Statistician 2
+    url: https://github.com/publicstatistician2
+    email: Public.Statistician2@statistics.org
+date: "2025-05-16"
+doi: "10.1000/182"  # Optional
+license: "CC-BY 4.0"  # Optional
+
+# If resources is multilingual, adopt that structure
+# (need to have both title and title-* fields)
+# title: "Hello SSPCloud"
+# title-en: "Hello SSPCloud"
+# title-fr: "Bonjour SSPCloud"
+
+description: |
+    This template is a fast starting pack for AIML4OS projects that use `Python`. For `R` projects, see [this `Github` repository](https://github.com/InseeFrLab/AIML4OS-template-quarto-r).
+
+# If resources is multilingual, adopt that structure
+# (need to have both description and description-* fields)
+
+# description: |
+  # Resource summaries are embedded as metadata for use in training portals and for sharing on social media.
+# description-multilingual:
+  # en: |
+  #   Resource summaries are embedded as metadata for use in training portals and for sharing on social media.
+  # fr: |
+  #   Les résumés des ressources sont intégrés sous forme de métadonnées, utiles pour les portails de formation ou le partage sur les réseaux sociaux.
+
+tags:
+  - Starter Pack
+  - SSPCloud Documentation
+
+image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY-OenRMvFyZUfDm_snUCxpV4SyaHvUeqObA&s"
+
+# You can also add any valid Quarto option:
+# HTML: https://quarto.org/docs/reference/formats/html.html
+# PDF: https://quarto.org/docs/reference/formats/pdf.html
+# ...
+
+# Custom metadata for training portals -------------------------------------
+
+duration: "90"  # Duration in minutes
+
+skills:
+  - Git Basics
+  - Quarto Authoring
+  - Reproducible Research
+  - Using SSPCloud
+
+courseMaterial:
+  - R Scripts
+  # - Videos
+  # - Jupyter Notebooks
+
+publicLevel:
+  - Beginner
+  - Intermediate
+  # - Expert
+
+resourceLanguage:
+  - R
+  # - Python
+
+suggestedBefore:
+  - https://quarto.org/
+  - https://juba.github.io/tidyverse/
+
+deploymentURL:
+  - rstudio:
+      - "https://datalab.sspcloud.fr/launcher/ide/rstudio-sparkr?autoLaunch=true&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2FInseeFrLab%2Fformation-bceao%2Fmain%2Ftp%2Finit-tp.sh%C2%BB&resources.limits.memory=%C2%AB100Gi%C2%BB&persistence.size=%C2%AB40Gi%C2%BB&init.personalInitArgs=%C2%ABen%C2%BB"
+  - jupyter:
+      - "https://datalab.sspcloud.fr/launcher/ide/jupyter-python?name=jupyter-python&shared=false&version=1.13.44&autoLaunch=true&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Flinogaliana%2Fpython-datascientist%2Fmaster%2Fsspcloud%2Finit-jupyter.sh%C2%BB&init.personalInitArgs=%C2%ABen%2Fmanipulation%2001_numpy%C2%BB"
+  - vscode:
+      - en: "https://datalab.sspcloud.fr/launcher/ide/vscode-python?autoLaunch=true&onyxia.friendlyName=%C2%AB03_geopandas_intro%C2%BB&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Flinogaliana%2Fpython-datascientist%2Fmaster%2Fsspcloud%2Finit-vscode.sh%C2%BB&init.personalInitArgs=%C2%ABen/manipulation%2003_geopandas_intro%C2%BB&security.allowlist.enabled=false"
+      - fr: "https://datalab.sspcloud.fr/launcher/ide/vscode-python?autoLaunch=true&onyxia.friendlyName=%C2%AB03_geopandas_intro%C2%BB&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Flinogaliana%2Fpython-datascientist%2Fmaster%2Fsspcloud%2Finit-vscode.sh%C2%BB&init.personalInitArgs=%C2%ABen/manipulation%2003_geopandas_intro%C2%BB&security.allowlist.enabled=false"
+
+suggestedRequirements:
+  - "https://quarto.org/"
+  - "https://scikit-learn.org/stable/"
+
+# Optional: Statistical process classification
+gsbpm: "5.1" # See complete taxonomy: https://www.unescap.org/sites/default/d8files/event-documents/GSBPM_v5.1_R_for_SBP_8-18Apr2024.pdf
+---
+
+
+# What is this template?
+
+This template is a Quarto Website customized for the AIML4OS project, designed to be used with {{< fa brands python >}}.
+
+# How to use it?
+
+See [this tutorial](https://aiml4os.github.io/training-material-starting-pack/).
+
+
+
+
+

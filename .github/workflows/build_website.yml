@@ -1,0 +1,47 @@
+name: Build the website
+
+on:
+  push:
+    branches:
+      - main   # Triggers workflow on push to the main branch
+  workflow_dispatch:
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      # Step 1: Checkout the repository
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # Step 2: Install uv
+      - name: Install the latest version of uv
+        uses: astral-sh/setup-uv@v6
+        with:
+          version: "latest"
+          python-version: 3.12
+
+      - name: Restore environment
+        run: uv sync
+
+      # Step 3: Set up Quarto
+      - name: Set up quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+
+      # Step 4: Render Quarto in uv virtual environment (HTML)
+      - name: Render
+        run: uv run quarto render
+
+      # # Step 4b: Render Quarto in uv virtual environment (HTML)
+      # - name: Render in ipynb
+      #   run: uv run quarto render --to ipynb
+        
+      # Step 5: Publish website
+      - name: Publish to GitHub Pages (and render)
+        uses: quarto-dev/quarto-actions/publish@v2
+        with:
+          target: gh-pages
+          render: false

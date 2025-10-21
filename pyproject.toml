@@ -1,0 +1,13 @@
+[project]
+name = "aiml4os-template-quarto-python"
+version = "0.1.0"
+description = "A basic project template for Python"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "great-tables>=0.17.0",
+    "jupyter>=1.1.1",
+    "matplotlib>=3.10.3",
+    "pandas>=2.3.0",
+    "polars>=1.30.0",
+]
