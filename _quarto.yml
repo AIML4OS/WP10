@@ -8,8 +8,8 @@ project:
 website:
   page-navigation: true
   title: "Template for training resources in Python"
-  site-url: "https://AIML4OS.github.io/AIML4OS-template-quarto-python/"
-  repo-url: "https://github.com/AIML4OS/AIML4OS-template-quarto-python"
+  site-url: "https://AIML4OS.github.io/WP10_template_quarto_python_test/"
+  repo-url: "https://github.com/AIML4OS/WP10_template_quarto_python_test"
   repo-actions: [edit, source, issue]
   sidebar:
     search: true
