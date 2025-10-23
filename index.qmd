@@ -1,42 +1,93 @@
 ---
-title: "Template for Python training material" # See below for multilingual resource
+title: "AIML4OS WP10 From text to code" # See below for multilingual resource
 format: html # This qmd file will be compiled as HTML only (no notebook)
 include-before-body:
-  - text: <img src="resources/cover/main2.png" style="max-width:900px;width:100%"><br>
-author:
-  - name: Public Statistician 1
-    url: https://github.com/publicstatistician1
-    email: Public.Statistician1@statistics.org
-  - name: Public Statistician 2
-    url: https://github.com/publicstatistician2
-    email: Public.Statistician2@statistics.org
-date: "2025-05-16"
-doi: "10.1000/182"  # Optional
+  - text: |
+      <img src="resources/cover/main2.png" style="max-width:900px;width:100%"><br>
+
+      <style>
+        /* Paragraphs */
+        p { text-align: justify; }
+
+        /* Tables */
+        table { width: 100%; table-layout: fixed; }
+        th, td {
+          padding: 10px;
+          text-align: left;
+          word-wrap: break-word;
+          font-size: 12px; /* adjust if needed */
+        }
+        /* Cluster column widths */
+        .cluster-1, .cluster-2, .cluster-3, .cluster-4, .cluster-5 { width: 20%; }
+
+        /* NSI grid + list (smaller font) */
+        .nsi-grid {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr; /* left = observers, middle + right = participants */
+          gap: 1rem;
+          align-items: start;
+        }
+        .nsi-grid h3 {
+          margin: 0 0 .25rem 0;
+          font-size: 0.95rem;
+        }
+        .nsi-list { margin: 0; padding-left: 1.1rem; list-style: disc; }
+        .nsi-list.small { font-size: 13px; line-height: 1.4; }
+        @media (max-width: 800px) {
+          .nsi-grid { grid-template-columns: 1fr; } /* stack on small screens */
+        }
+      </style>
+
+      <!-- NSIs: left = observers, middle/right = participants -->
+      <div class="nsi-grid">
+
+        <!-- LEFT: Observers -->
+        <div class="nsi-col observers">
+          <h3>Observers</h3>
+          <ul class="nsi-list small">
+            <li><a href="https://www.stat.si/StatWeb/en">SURS (Slovenia)</a></li>
+            <li><a href="https://www.cso.ie/en/">CSO (Ireland)</a></li>
+            <li><a href="https://www.cystat.gov.cy/en/">Statistical Service (Cyprus)</a></li>
+            <li><a href="https://statistiques.public.lu/en.html">STATEC (Luxembourg)</a></li>
+          </ul>
+        </div>
+
+        <!-- MIDDLE: Participants -->
+        <div class="nsi-col participants">
+          <h3>Participants</h3>
+          <ul class="nsi-list small">
+            <li><a href="https://www.destatis.de/DE/Home/_inhalt.html">Destatis (Germany)</a></li>
+            <li><a href="https://stat.gov.pl/en/">Statistics Poland</a></li>
+            <li><a href="https://www.ssb.no/en/">Statistics Norway</a></li>
+            <li><a href="https://www.cbs.nl/en-gb">Statistics Netherlands</a></li>
+          </ul>
+        </div>
+
+        <!-- RIGHT: Participants (cont.) -->
+        <div class="nsi-col participants">
+          <h3>Participants (cont.)</h3>
+          <ul class="nsi-list small">
+            <li><a href="https://www.statistik.at/">Statistics Austria</a></li>
+            <li><a href="https://www.insee.fr/en/accueil">Insee (France)</a></li>
+            <li><a href="https://www.ine.es/en/">National Institute of Statistics (Spain)</a></li>
+            <li><a href="https://www.dst.dk/en">Statistics Denmark</a></li>
+          </ul>
+        </div>
+
+      </div>
 license: "CC-BY 4.0"  # Optional
 
-# If resources is multilingual, adopt that structure
-# (need to have both title and title-* fields)
-# title: "Hello SSPCloud"
-# title-en: "Hello SSPCloud"
-# title-fr: "Bonjour SSPCloud"
+
 
 description: |
-    This template is a fast starting pack for AIML4OS projects that use `Python`. For `R` projects, see [this `Github` repository](https://github.com/InseeFrLab/AIML4OS-template-quarto-r).
+    This page introduces the experiences and potential of using Artificial Intelligence (AI) and Machine Learning (ML) for classifying and coding in official statistics, specifically within the context of WP10 "From Text to Code" of the AIML4OS project. This WP aims to explore AI/ML methodologies for enhancing the accuracy and efficiency of classification and coding processes used in statistical production.
 
-# If resources is multilingual, adopt that structure
-# (need to have both description and description-* fields)
-
-# description: |
-  # Resource summaries are embedded as metadata for use in training portals and for sharing on social media.
-# description-multilingual:
-  # en: |
-  #   Resource summaries are embedded as metadata for use in training portals and for sharing on social media.
-  # fr: |
-  #   Les résumés des ressources sont intégrés sous forme de métadonnées, utiles pour les portails de formation ou le partage sur les réseaux sociaux.
 
 tags:
-  - Starter Pack
-  - SSPCloud Documentation
+  - AI/ML
+  - Classifying and Coding
+  - WP10
+  - Official Statistics
 
 image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY-OenRMvFyZUfDm_snUCxpV4SyaHvUeqObA&s"
 
@@ -49,25 +100,10 @@ image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY-OenRMvFyZUfDm_s
 
 duration: "90"  # Duration in minutes
 
-skills:
-  - Git Basics
-  - Quarto Authoring
-  - Reproducible Research
-  - Using SSPCloud
-
-courseMaterial:
-  - R Scripts
-  # - Videos
-  # - Jupyter Notebooks
-
-publicLevel:
-  - Beginner
-  - Intermediate
-  # - Expert
 
 resourceLanguage:
   - R
-  # - Python
+  - Python
 
 suggestedBefore:
   - https://quarto.org/
@@ -91,15 +127,17 @@ gsbpm: "5.1" # See complete taxonomy: https://www.unescap.org/sites/default/d8fi
 ---
 
 
-# What is this template?
+## WP10 Goals
 
-This template is a Quarto Website customized for the AIML4OS project, designed to be used with {{< fa brands python >}}.
+WP10 tackles one of the most persistent challenges in official statistics: classifying free-text data - such as job titles or household expenses - into standardised codes like ISCO, COICOP, and NACE. AI/ML methods offer indeed significant improvements in statistical classification and coding, where large datasets and complex categories make manual coding inefficient. Machine learning models can automatically assign labels or codes to data based on training from previously classified datasets. With data sources varying widely in language, structure, and national adaptations, developing a one-size-fits-all solution is nearly impossible. To address this, Work Package 10 brings together nine countries and four observers in a collaborative effort to overcome shared obstacles: limited training data, complexity of the natural language and statistical nomenclatures, MLOps deployment, and frequent classification revisions.
 
-# How to use it?
+## Clusters Structure
 
-See [this tutorial](https://aiml4os.github.io/training-material-starting-pack/).
+The team has adopted a multi-pronged approach, organised into five collaborative clusters, each targeting a specific challenge. 
 
-
-
-
+| Cluster 1                                               | Cluster 2                                                | Cluster 3                                               | Cluster 4                                                | Cluster 5                                               |
+|---------------------------------------------------------|----------------------------------------------------------|---------------------------------------------------------|----------------------------------------------------------|---------------------------------------------------------|
+| <span class="cluster-1">National Institute Of Statistics (Spain), Destatis (Germany)</span> | <span class="cluster-2">Statistics Norway, Statistics Poland, Statistics Austria</span> | <span class="cluster-3">Statistics Austria, Statistics Denmark</span> | <span class="cluster-4">Insee (France), Statistics Austria, Destatis (Germany)</span> | <span class="cluster-5">Insee (France), Statistics Norway, Statistics Netherlands</span> |
+| Problem: Insufficient training data                     | Problem: Addressing the complexity and nuances of natural language | Problem: Traditional models neglect hierarchical structures | Problem: Challenges in deploying/maintaining classification models in production environments | Problem: Adapting to classification system revisions |
+| Task: Generate synthetic training material using LLMs   | Task: Using LLMs and RAGs for text classification         | Task: Using Hierarchical methods for text classification | Task: Provide guidelines for model deployment/monitoring  | Task: Use LLMs for handling the next NACE Revision     |
 
