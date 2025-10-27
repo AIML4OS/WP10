@@ -1,6 +1,7 @@
 ---
 title: "AIML4OS WP10 From text to code" # See below for multilingual resource
 format: html # This qmd file will be compiled as HTML only (no notebook)
+
 include-before-body:
   - text: |
       <img src="resources/cover/main2.png" style="max-width:900px;width:100%"><br>
@@ -17,13 +18,14 @@ include-before-body:
           word-wrap: break-word;
           font-size: 12px; /* adjust if needed */
         }
+
         /* Cluster column widths */
         .cluster-1, .cluster-2, .cluster-3, .cluster-4, .cluster-5 { width: 20%; }
 
         /* NSI grid + list (smaller font) */
         .nsi-grid {
           display: grid;
-          grid-template-columns: 1fr 1fr 1fr; /* left = observers, middle + right = participants */
+          grid-template-columns: 1fr 1fr 1fr; /* left + middle = participants, right = observers */
           gap: 1rem;
           align-items: start;
         }
@@ -38,21 +40,10 @@ include-before-body:
         }
       </style>
 
-      <!-- NSIs: left = observers, middle/right = participants -->
+      <!-- NSIs: left + middle = participants, right = observers -->
       <div class="nsi-grid">
 
-        <!-- LEFT: Observers -->
-        <div class="nsi-col observers">
-          <h3>Observers</h3>
-          <ul class="nsi-list small">
-            <li><a href="https://www.stat.si/StatWeb/en">SURS (Slovenia)</a></li>
-            <li><a href="https://www.cso.ie/en/">CSO (Ireland)</a></li>
-            <li><a href="https://www.cystat.gov.cy/en/">Statistical Service (Cyprus)</a></li>
-            <li><a href="https://statistiques.public.lu/en.html">STATEC (Luxembourg)</a></li>
-          </ul>
-        </div>
-
-        <!-- MIDDLE: Participants -->
+        <!-- LEFT: Participants -->
         <div class="nsi-col participants">
           <h3>Participants</h3>
           <ul class="nsi-list small">
@@ -63,9 +54,8 @@ include-before-body:
           </ul>
         </div>
 
-        <!-- RIGHT: Participants (cont.) -->
+        <!-- MIDDLE: Participants -->
         <div class="nsi-col participants">
-          <h3>Participants (cont.)</h3>
           <ul class="nsi-list small">
             <li><a href="https://www.statistik.at/">Statistics Austria</a></li>
             <li><a href="https://www.insee.fr/en/accueil">Insee (France)</a></li>
@@ -74,13 +64,25 @@ include-before-body:
           </ul>
         </div>
 
+        <!-- RIGHT: Observers -->
+        <div class="nsi-col observers">
+          <h3>Observers</h3>
+          <ul class="nsi-list small">
+            <li><a href="https://www.stat.si/StatWeb/en">SURS (Slovenia)</a></li>
+            <li><a href="https://www.cso.ie/en/">CSO (Ireland)</a></li>
+            <li><a href="https://www.cystat.gov.cy/en/">Statistical Service (Cyprus)</a></li>
+            <li><a href="https://statistiques.public.lu/en.html">STATEC (Luxembourg)</a></li>
+          </ul>
+        </div>
+
       </div>
 license: "CC-BY 4.0"  # Optional
 
 
 
+
 description: |
-    This page introduces the experiences and potential of using Artificial Intelligence (AI) and Machine Learning (ML) for classifying and coding in official statistics, specifically within the context of WP10 "From Text to Code" of the AIML4OS project. This WP aims to explore AI/ML methodologies for enhancing the accuracy and efficiency of classification and coding processes used in statistical production. TEST
+    This page introduces the experiences and potential of using Artificial Intelligence (AI) and Machine Learning (ML) for classifying and coding in official statistics, specifically within the context of Work Package 10 "From Text to Code" (WP10) of the AIML4OS project. This WP aims to explore AI/ML methodologies for enhancing the accuracy and efficiency of classification and coding processes used National Statistical Institutes (NSI).
 
 
 tags:
@@ -128,17 +130,56 @@ gsbpm: "5.1" # See complete taxonomy: https://www.unescap.org/sites/default/d8fi
 
 
 
+
 ## WP10 Goals
 
-WP10 tackles one of the most persistent challenges in official statistics: classifying free-text data - such as job titles or household expenses - into standardised codes like ISCO, COICOP, and NACE. AI/ML methods offer indeed significant improvements in statistical classification and coding, where large datasets and complex categories make manual coding inefficient. Machine learning models can automatically assign labels or codes to data based on training from previously classified datasets. With data sources varying widely in language, structure, and national adaptations, developing a one-size-fits-all solution is nearly impossible. To address this, Work Package 10 brings together nine countries and four observers in a collaborative effort to overcome shared obstacles: limited training data, complexity of the natural language and statistical nomenclatures, MLOps deployment, and frequent classification revisions.
+WP10 addresses one of the most persistent challenges in official statistics: the classification of free-text data — such as job titles or household expenditures — into standardized statistical codes like ISCO, COICOP, and NACE.  Artificial Intelligence and Machine Learning (AI/ML) methods offer significant potential to enhance statistical classification and coding, particularly in contexts where large datasets and complex categorical structures make manual coding inefficient.  
 
+However, the diversity of data sources — varying in language, structure, and national adaptations — makes developing a single universal solution nearly impossible.  
+
+To tackle this, **Work Package 10 (WP10)** brings together **nine countries and four observers** in a collaborative effort to overcome shared obstacles, including:
+
+- Limited training data,  
+- Linguistic complexity and the diversity of statistical nomenclatures,  
+- MLOps deployment challenges, and  
+- Frequent revisions of classification systems.
+
+## WP10 Outputs
+
+WP10 aims to deliver a series of tangible outputs across two main phases.
+
+### **Phase 1: Understanding the Landscape — Projects Overview and Literature Reviews**
+
+**Projects Overview:**  
+During the first year, each participating NSI presented its ongoing work on text classification, enabling WP10 to gain a comprehensive overview of how this topic is currently being approached across institutions, and what challenges are commonly encountered.  
+A synthesis of these presentations — identifying shared priorities, differences, and common obstacles — has been compiled in the *Landscape Document* ([link](https://blabla)).  
+
+**Literature Reviews:**  
+Building on this initial mapping, WP10 identified five key challenges and conducted five corresponding literature reviews. These reviews serve as the foundational groundwork before moving into the experimental phase.  
+All reviews are accessible here: *Literature Reviews* ([link](https://blabla)).
+
+---
+
+### **Phase 2: Exploring Solutions — Experiments and Pipeline Implementations**
+
+Based on insights from Phase 1, WP10 identified **five thematic clusters** to structure the experimental work.  
+Each cluster focuses on one of the main challenges NSIs face, exploring and implementing possible solutions collaboratively.   
+
+Rather than enforcing a single unified pipeline, the project aims to **document and share a variety of approaches**, enabling each NSI to tailor solutions to its specific national and operational context.  
+
+The clusters' reports will be made available here: *clusters reports* ([link](https://blabla)).
+All experimental code and resources are available through GitHub repositories linked in the cluster sections below.
+
+---
 ## Clusters Structure
 
-The team has adopted a multi-pronged approach, organised into five collaborative clusters, each targeting a specific challenge. 
+WP10 follows a **multi-pronged, collaborative structure** organized into five clusters — each targeting a specific statistical and technical challenge.
 
-| Cluster 1                                               | Cluster 2                                                | Cluster 3                                               | Cluster 4                                                | Cluster 5                                               |
-|---------------------------------------------------------|----------------------------------------------------------|---------------------------------------------------------|----------------------------------------------------------|---------------------------------------------------------|
-| <span class="cluster-1">National Institute Of Statistics (Spain), Destatis (Germany)</span> | <span class="cluster-2">Statistics Norway, Statistics Poland, Statistics Austria</span> | <span class="cluster-3">Statistics Austria, Statistics Denmark</span> | <span class="cluster-4">Insee (France), Statistics Austria, Destatis (Germany)</span> | <span class="cluster-5">Insee (France), Statistics Norway, Statistics Netherlands</span> |
-| Problem: Insufficient training data                     | Problem: Addressing the complexity and nuances of natural language | Problem: Traditional models neglect hierarchical structures | Problem: Challenges in deploying/maintaining classification models in production environments | Problem: Adapting to classification system revisions |
-| Task: Generate synthetic training material using LLMs   | Task: Using LLMs and RAGs for text classification         | Task: Using Hierarchical methods for text classification | Task: Provide guidelines for model deployment/monitoring  | Task: Use LLMs for handling the next NACE Revision     |
+| Cluster | Participants | Problem | Solution |
+|----------|--------------|----------|-----------|
+| **Cluster 1** | <span class="cluster-1">National Institute of Statistics (Spain), Destatis (Germany)</span> | Insufficient training data | Generate synthetic training material using LLMs |
+| **Cluster 2** | <span class="cluster-2">Statistics Norway, Statistics Poland, Statistics Austria</span> | Addressing the complexity and nuances of natural language | Use LLMs and RAGs for text classification |
+| **Cluster 3** | <span class="cluster-3">Statistics Austria, Statistics Denmark</span> | Traditional models neglect hierarchical structures | Apply hierarchical methods for text classification |
+| **Cluster 4** | <span class="cluster-4">Insee (France), Statistics Austria, Destatis (Germany)</span> | Challenges in deploying and maintaining classification models in production environments | Provide guidelines for model deployment and monitoring |
+| **Cluster 5** | <span class="cluster-5">Insee (France), Statistics Norway, Statistics Netherlands</span> | Adapting to classification system revisions | Use LLMs to handle the next NACE revision |
 
