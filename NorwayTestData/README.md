@@ -29,7 +29,7 @@ The following variables are included in the data:
 
 # Data location
 The data is saved as parquet files in the s3 folder `projet-aiml4os-wp10/NorwayData`.
-The training and test data can be read in the SSPCloud environment using the following python code:
+The training and test data can be read in the SSPCloud environment using the following python code. Make sure to start your SSPCloud service from your personal project area and not the WP10 area if you are using SSPCloud/Oniyxia. This is to ensure that the AWS_S3_ENDPOINT is set correctly:
 ```
 import os
 import s3fs
