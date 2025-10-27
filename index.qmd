@@ -80,7 +80,7 @@ license: "CC-BY 4.0"  # Optional
 
 
 description: |
-    This page introduces the experiences and potential of using Artificial Intelligence (AI) and Machine Learning (ML) for classifying and coding in official statistics, specifically within the context of WP10 "From Text to Code" of the AIML4OS project. This WP aims to explore AI/ML methodologies for enhancing the accuracy and efficiency of classification and coding processes used in statistical production.
+    This page introduces the experiences and potential of using Artificial Intelligence (AI) and Machine Learning (ML) for classifying and coding in official statistics, specifically within the context of WP10 "From Text to Code" of the AIML4OS project. This WP aims to explore AI/ML methodologies for enhancing the accuracy and efficiency of classification and coding processes used in statistical production. TEST
 
 
 tags:
