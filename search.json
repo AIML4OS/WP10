@@ -1,0 +1,52 @@
+[
+  {
+    "objectID": "index.html#wp10-goals",
+    "href": "index.html#wp10-goals",
+    "title": "AIML4OS WP10 From text to code",
+    "section": "WP10 Goals",
+    "text": "WP10 Goals\nWP10 tackles one of the most persistent challenges in official statistics: classifying free-text data - such as job titles or household expenses - into standardised codes like ISCO, COICOP, and NACE. AI/ML methods offer indeed significant improvements in statistical classification and coding, where large datasets and complex categories make manual coding inefficient. Machine learning models can automatically assign labels or codes to data based on training from previously classified datasets. With data sources varying widely in language, structure, and national adaptations, developing a one-size-fits-all solution is nearly impossible. To address this, Work Package 10 brings together nine countries and four observers in a collaborative effort to overcome shared obstacles: limited training data, complexity of the natural language and statistical nomenclatures, MLOps deployment, and frequent classification revisions.",
+    "crumbs": [
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "index.html#clusters-structure",
+    "href": "index.html#clusters-structure",
+    "title": "AIML4OS WP10 From text to code",
+    "section": "Clusters Structure",
+    "text": "Clusters Structure\nThe team has adopted a multi-pronged approach, organised into five collaborative clusters, each targeting a specific challenge.\n\n\n\n\n\n\n\n\n\n\nCluster 1\nCluster 2\nCluster 3\nCluster 4\nCluster 5\n\n\n\n\nNational Institute Of Statistics (Spain), Destatis (Germany)\nStatistics Norway, Statistics Poland, Statistics Austria\nStatistics Austria, Statistics Denmark\nInsee (France), Statistics Austria, Destatis (Germany)\nInsee (France), Statistics Norway, Statistics Netherlands\n\n\nProblem: Insufficient training data\nProblem: Addressing the complexity and nuances of natural language\nProblem: Traditional models neglect hierarchical structures\nProblem: Challenges in deploying/maintaining classification models in production environments\nProblem: Adapting to classification system revisions\n\n\nTask: Generate synthetic training material using LLMs\nTask: Using LLMs and RAGs for text classification\nTask: Using Hierarchical methods for text classification\nTask: Provide guidelines for model deployment/monitoring\nTask: Use LLMs for handling the next NACE Revision",
+    "crumbs": [
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter1.html",
+    "href": "chapters/chapter1.html",
+    "title": "A basic chapter",
+    "section": "",
+    "text": "Open the associated notebook:",
+    "crumbs": [
+      "A complete example"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter1.html#a-beautiful-dataframe",
+    "href": "chapters/chapter1.html#a-beautiful-dataframe",
+    "title": "A basic chapter",
+    "section": "A beautiful dataframe",
+    "text": "A beautiful dataframe\nThis section demonstrates how to create and display a simple pandas DataFrame.\n\n\nCode\nimport pandas as pd\n\ndata = {\n    \"Name\": [\"Alice\", \"Bob\", \"Charlie\"],\n    \"Age\": [25, 30, 35],\n    \"City\": [\"Paris\", \"Dublin\", \"Berlin\"]\n}\n\ndf = pd.DataFrame(data)\ndf\n\n\n\n\nTable 1: Simple pandas DataFrame\n\n\n\n\n\n\n\n\n\n\nName\nAge\nCity\n\n\n\n\n0\nAlice\n25\nParis\n\n\n1\nBob\n30\nDublin\n\n\n2\nCharlie\n35\nBerlin",
+    "crumbs": [
+      "A complete example"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter1.html#a-more-sophisticated-table",
+    "href": "chapters/chapter1.html#a-more-sophisticated-table",
+    "title": "A basic chapter",
+    "section": "A more sophisticated table",
+    "text": "A more sophisticated table\nThis section demonstrates how to create and display a simple pandas DataFrame.\n\n\nCode\nfrom great_tables import GT, html\nfrom great_tables.data import sza\nimport polars as pl\nfrom polars import col as c\nimport polars.selectors as cs\n\nsza_pivot = (\n    pl.from_pandas(sza)\n    .filter((c.latitude == \"20\") & (c.tst &lt;= \"1200\"))\n    .select(pl.col(\"*\").exclude(\"latitude\"))\n    .drop_nulls()\n    .pivot(values=\"sza\", index=\"month\", on=\"tst\", sort_columns=True)\n)\n\n(\n    GT(sza_pivot, rowname_col=\"month\")\n    .data_color(\n        domain=[90, 0],\n        palette=[\"rebeccapurple\", \"white\", \"orange\"],\n        na_color=\"white\",\n    )\n    .tab_header(\n        title=\"Solar Zenith Angles from 05:30 to 12:00\",\n        subtitle=html(\"Average monthly values at latitude of 20&deg;N.\"),\n    )\n    .sub_missing(missing_text=\"\")\n)\n\n\n\n\n\n\n\n\nSolar Zenith Angles from 05:30 to 12:00\n\n\nAverage monthly values at latitude of 20°N.\n\n\n\n0530\n0600\n0630\n0700\n0730\n0800\n0830\n0900\n0930\n1000\n1030\n1100\n1130\n1200\n\n\n\n\njan\n\n\n\n84.9\n78.7\n72.7\n66.1\n61.5\n56.5\n52.1\n48.3\n45.5\n43.6\n43.0\n\n\nfeb\n\n\n88.9\n82.5\n75.8\n69.6\n63.3\n57.7\n52.2\n47.4\n43.1\n40.0\n37.8\n37.2\n\n\nmar\n\n\n85.7\n78.8\n72.0\n65.2\n58.6\n52.3\n46.2\n40.5\n35.5\n31.4\n28.6\n27.7\n\n\napr\n\n88.5\n81.5\n74.4\n67.4\n60.3\n53.4\n46.5\n39.7\n33.2\n26.9\n21.3\n17.2\n15.5\n\n\nmay\n\n85.0\n78.2\n71.2\n64.3\n57.2\n50.2\n43.2\n36.1\n29.1\n26.1\n15.2\n8.8\n5.0\n\n\njun\n89.2\n82.7\n76.0\n69.3\n62.5\n55.7\n48.8\n41.9\n35.0\n28.1\n21.1\n14.2\n7.3\n2.0\n\n\njul\n88.8\n82.3\n75.7\n69.1\n62.3\n55.5\n48.7\n41.8\n35.0\n28.1\n21.2\n14.3\n7.7\n3.1\n\n\naug\n\n83.8\n77.1\n70.2\n63.3\n56.4\n49.4\n42.4\n35.4\n28.3\n21.3\n14.3\n7.3\n1.9\n\n\nsep\n\n87.2\n80.2\n73.2\n66.1\n59.1\n52.1\n45.1\n38.1\n31.3\n24.7\n18.6\n13.7\n11.6\n\n\noct\n\n\n84.1\n77.1\n70.2\n63.3\n56.5\n49.9\n43.5\n37.5\n32.0\n27.4\n24.3\n23.1\n\n\nnov\n\n\n87.8\n81.3\n74.5\n68.3\n61.8\n56.0\n50.2\n45.3\n40.7\n37.4\n35.1\n34.4\n\n\ndec\n\n\n\n84.3\n78.0\n71.8\n66.1\n60.5\n55.6\n50.9\n47.2\n44.2\n42.4\n41.8",
+    "crumbs": [
+      "A complete example"
+    ]
+  }
+]
