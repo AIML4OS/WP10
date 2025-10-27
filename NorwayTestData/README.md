@@ -29,7 +29,7 @@ The following variables are included in the data:
 
 # Data location
 The data is saved as parquet files in the s3 folder `projet-aiml4os-wp10/NorwayData`.
-The training and test data can be read using the following python code:
+The training and test data can be read in the SSPCloud environment using the following python code:
 ```
 import os
 import s3fs
@@ -46,3 +46,7 @@ filpath_test = "projet-aiml4os-wp10/NorwayData/test_norwaydata.parquet"
 with fs.open(filpath_test, mode="rb") as file_in:
     test = pd.read_parquet(file_in)
 ```
+
+Both training and test data is publically available. To read the data outside the SSPCloud environment, you can use the following URLs:
+[https://minio.lab.sspcloud.fr/projet-aiml4os-wp10/NorwayData/test_norwaydata.parquet](https://minio.lab.sspcloud.fr/projet-aiml4os-wp10/NorwayData/test_norwaydata.parquet)
+[https://minio.lab.sspcloud.fr/projet-aiml4os-wp10/NorwayData/train_norwaydata.parquet](https://minio.lab.sspcloud.fr/projet-aiml4os-wp10/NorwayData/train_norwaydata.parquet)
