@@ -127,6 +127,7 @@ gsbpm: "5.1" # See complete taxonomy: https://www.unescap.org/sites/default/d8fi
 ---
 
 
+
 ## WP10 Goals
 
 WP10 tackles one of the most persistent challenges in official statistics: classifying free-text data - such as job titles or household expenses - into standardised codes like ISCO, COICOP, and NACE. AI/ML methods offer indeed significant improvements in statistical classification and coding, where large datasets and complex categories make manual coding inefficient. Machine learning models can automatically assign labels or codes to data based on training from previously classified datasets. With data sources varying widely in language, structure, and national adaptations, developing a one-size-fits-all solution is nearly impossible. To address this, Work Package 10 brings together nine countries and four observers in a collaborative effort to overcome shared obstacles: limited training data, complexity of the natural language and statistical nomenclatures, MLOps deployment, and frequent classification revisions.
