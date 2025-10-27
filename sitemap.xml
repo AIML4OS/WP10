@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://github.com/AIML4OS/WP10_template_quarto_python_test/index.html</loc>
-    <lastmod>2025-10-27T10:18:36.588Z</lastmod>
+    <loc>https://github.com/AIML4OS/WP10_template_quarto_python_test/chapters/howContribute.html</loc>
+    <lastmod>2025-10-27T15:24:06.432Z</lastmod>
   </url>
   <url>
-    <loc>https://github.com/AIML4OS/WP10_template_quarto_python_test/chapters/chapter1.html</loc>
-    <lastmod>2025-10-27T10:18:36.571Z</lastmod>
+    <loc>https://github.com/AIML4OS/WP10_template_quarto_python_test/index.html</loc>
+    <lastmod>2025-10-27T15:24:06.452Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/AIML4OS/WP10_template_quarto_python_test/chapters/clusterX.html</loc>
+    <lastmod>2025-10-27T15:24:06.432Z</lastmod>
   </url>
 </urlset>
