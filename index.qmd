@@ -111,14 +111,6 @@ suggestedBefore:
   - https://quarto.org/
   - https://juba.github.io/tidyverse/
 
-deploymentURL:
-  - rstudio:
-      - "https://datalab.sspcloud.fr/launcher/ide/rstudio-sparkr?autoLaunch=true&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2FInseeFrLab%2Fformation-bceao%2Fmain%2Ftp%2Finit-tp.sh%C2%BB&resources.limits.memory=%C2%AB100Gi%C2%BB&persistence.size=%C2%AB40Gi%C2%BB&init.personalInitArgs=%C2%ABen%C2%BB"
-  - jupyter:
-      - "https://datalab.sspcloud.fr/launcher/ide/jupyter-python?name=jupyter-python&shared=false&version=1.13.44&autoLaunch=true&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Flinogaliana%2Fpython-datascientist%2Fmaster%2Fsspcloud%2Finit-jupyter.sh%C2%BB&init.personalInitArgs=%C2%ABen%2Fmanipulation%2001_numpy%C2%BB"
-  - vscode:
-      - en: "https://datalab.sspcloud.fr/launcher/ide/vscode-python?autoLaunch=true&onyxia.friendlyName=%C2%AB03_geopandas_intro%C2%BB&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Flinogaliana%2Fpython-datascientist%2Fmaster%2Fsspcloud%2Finit-vscode.sh%C2%BB&init.personalInitArgs=%C2%ABen/manipulation%2003_geopandas_intro%C2%BB&security.allowlist.enabled=false"
-      - fr: "https://datalab.sspcloud.fr/launcher/ide/vscode-python?autoLaunch=true&onyxia.friendlyName=%C2%AB03_geopandas_intro%C2%BB&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Flinogaliana%2Fpython-datascientist%2Fmaster%2Fsspcloud%2Finit-vscode.sh%C2%BB&init.personalInitArgs=%C2%ABen/manipulation%2003_geopandas_intro%C2%BB&security.allowlist.enabled=false"
 
 suggestedRequirements:
   - "https://quarto.org/"
@@ -152,7 +144,7 @@ WP10 aims to deliver a series of tangible outputs across two main phases.
 
 **Projects Overview:**  
 During the first year, each participating NSI presented its ongoing work on text classification, enabling WP10 to gain a comprehensive overview of how this topic is currently being approached across institutions, and what challenges are commonly encountered.  
-These presentations are accessible on Github ([link](https://blabla)). 
+These presentations are accessible on Github ([link](https://github.com/AIML4OS/WP10/tree/main/ProjectsOverview/ProjectsPresentations)). 
 A synthesis of these presentations — identifying shared priorities, differences, and common obstacles — has been compiled in the *Landscape Document* ([link coming soon](https://blabla)).  
 
 **Literature Reviews:**  
