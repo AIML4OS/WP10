@@ -1,4 +1,4 @@
-# <img height="18" width="18" src="https://cdn.simpleicons.org/python/00ccff99" /> tutorial template for AIML4OS projects
+# <img height="18" width="18" src="https://cdn.simpleicons.org/python/00ccff99" /> Work Package 10 "From Text to Code" - Guide and Entry point through WP10 Outputs
 
 This repository contains the work and outputs of Work Package 10 – “From Text to Code” within the project “Artificial Intelligence for Official Statistics (AIML4OS)” ([link]{https://cros.ec.europa.eu/dashboard/aiml4os}). 
 
