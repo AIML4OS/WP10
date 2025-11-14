@@ -8,3 +8,4 @@ sh $MY_REPO/sspcloud/restore_environment.sh
 
 # Download data
 sh $MY_REPO/sspcloud/download_data.sh
+
