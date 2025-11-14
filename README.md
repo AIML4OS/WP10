@@ -1,6 +1,6 @@
 # <img height="18" width="18" src="https://cdn.simpleicons.org/python/00ccff99" /> Work Package 10 "From Text to Code" - Guide and Entry point through WP10 Outputs
 
-This repository contains the work and outputs of Work Package 10 – “From Text to Code” within the project “Artificial Intelligence for Official Statistics (AIML4OS)” ([link]{https://cros.ec.europa.eu/dashboard/aiml4os}). 
+This repository contains the work and outputs of Work Package 10 – “From Text to Code” within the project “Artificial Intelligence for Official Statistics (AIML4OS)” ([link](https://cros.ec.europa.eu/dashboard/aiml4os)). 
 
 WP10 aims to explore and apply AI/ML methodologies to enhance the accuracy and efficiency of classification and coding processes used by National Statistical Institutes (NSIs).
 
