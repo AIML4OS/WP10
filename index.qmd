@@ -157,7 +157,7 @@ A synthesis of these presentations — identifying shared priorities, difference
 
 **Literature Reviews:**  
 Building on this initial mapping, WP10 identified five key challenges and conducted five corresponding literature reviews. These reviews serve as the foundational groundwork before moving into the experimental phase.  
-All reviews are accessible here: *Literature Reviews* ([link](https://blabla)).
+All reviews are accessible here: *Literature Reviews* ([link](https://github.com/AIML4OS/WP10/tree/main/LiteratureReviews)).
 
 ---
 
