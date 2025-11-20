@@ -20,6 +20,66 @@
     ]
   },
   {
+    "objectID": "chapters/cluster4.html",
+    "href": "chapters/cluster4.html",
+    "title": "Cluster 4",
+    "section": "",
+    "text": "Which problem does the Cluster address, and why is it relevant for NSIs?",
+    "crumbs": [
+      "Cluster 4 Overview"
+    ]
+  },
+  {
+    "objectID": "chapters/cluster4.html#problem-definition-and-relevance",
+    "href": "chapters/cluster4.html#problem-definition-and-relevance",
+    "title": "Cluster 4",
+    "section": "",
+    "text": "Which problem does the Cluster address, and why is it relevant for NSIs?",
+    "crumbs": [
+      "Cluster 4 Overview"
+    ]
+  },
+  {
+    "objectID": "chapters/cluster4.html#expected-outputs-and-impact",
+    "href": "chapters/cluster4.html#expected-outputs-and-impact",
+    "title": "Cluster 4",
+    "section": "Expected Outputs and Impact",
+    "text": "Expected Outputs and Impact\nWhat does the Cluster aim to deliver, and how can these outputs support other NSIs?\nPlease provide the links to your Cluster’s repositories.",
+    "crumbs": [
+      "Cluster 4 Overview"
+    ]
+  },
+  {
+    "objectID": "chapters/cluster2.html",
+    "href": "chapters/cluster2.html",
+    "title": "Cluster 2",
+    "section": "",
+    "text": "Which problem does the Cluster address, and why is it relevant for NSIs?",
+    "crumbs": [
+      "Cluster 2 Overview"
+    ]
+  },
+  {
+    "objectID": "chapters/cluster2.html#problem-definition-and-relevance",
+    "href": "chapters/cluster2.html#problem-definition-and-relevance",
+    "title": "Cluster 2",
+    "section": "",
+    "text": "Which problem does the Cluster address, and why is it relevant for NSIs?",
+    "crumbs": [
+      "Cluster 2 Overview"
+    ]
+  },
+  {
+    "objectID": "chapters/cluster2.html#expected-outputs-and-impact",
+    "href": "chapters/cluster2.html#expected-outputs-and-impact",
+    "title": "Cluster 2",
+    "section": "Expected Outputs and Impact",
+    "text": "Expected Outputs and Impact\nWhat does the Cluster aim to deliver, and how can these outputs support other NSIs?\nPlease provide the links to your Cluster’s repositories.",
+    "crumbs": [
+      "Cluster 2 Overview"
+    ]
+  },
+  {
     "objectID": "index.html#wp10-goals",
     "href": "index.html#wp10-goals",
     "title": "AIML4OS WP10 From text to code",
@@ -50,33 +110,93 @@
     ]
   },
   {
-    "objectID": "chapters/clusterX.html",
-    "href": "chapters/clusterX.html",
-    "title": "Cluster X",
+    "objectID": "chapters/cluster1.html",
+    "href": "chapters/cluster1.html",
+    "title": "Cluster 1",
     "section": "",
     "text": "Which problem does the Cluster address, and why is it relevant for NSIs?",
     "crumbs": [
-      "Cluster X Overview"
+      "Cluster 1 Overview"
     ]
   },
   {
-    "objectID": "chapters/clusterX.html#problem-definition-and-relevance",
-    "href": "chapters/clusterX.html#problem-definition-and-relevance",
-    "title": "Cluster X",
+    "objectID": "chapters/cluster1.html#problem-definition-and-relevance",
+    "href": "chapters/cluster1.html#problem-definition-and-relevance",
+    "title": "Cluster 1",
     "section": "",
     "text": "Which problem does the Cluster address, and why is it relevant for NSIs?",
     "crumbs": [
-      "Cluster X Overview"
+      "Cluster 1 Overview"
     ]
   },
   {
-    "objectID": "chapters/clusterX.html#expected-outputs-and-impact",
-    "href": "chapters/clusterX.html#expected-outputs-and-impact",
-    "title": "Cluster X",
+    "objectID": "chapters/cluster1.html#expected-outputs-and-impact",
+    "href": "chapters/cluster1.html#expected-outputs-and-impact",
+    "title": "Cluster 1",
     "section": "Expected Outputs and Impact",
     "text": "Expected Outputs and Impact\nWhat does the Cluster aim to deliver, and how can these outputs support other NSIs?\nPlease provide the links to your Cluster’s repositories.",
     "crumbs": [
-      "Cluster X Overview"
+      "Cluster 1 Overview"
+    ]
+  },
+  {
+    "objectID": "chapters/cluster3.html",
+    "href": "chapters/cluster3.html",
+    "title": "Cluster 3",
+    "section": "",
+    "text": "Which problem does the Cluster address, and why is it relevant for NSIs?",
+    "crumbs": [
+      "Cluster 3 Overview"
+    ]
+  },
+  {
+    "objectID": "chapters/cluster3.html#problem-definition-and-relevance",
+    "href": "chapters/cluster3.html#problem-definition-and-relevance",
+    "title": "Cluster 3",
+    "section": "",
+    "text": "Which problem does the Cluster address, and why is it relevant for NSIs?",
+    "crumbs": [
+      "Cluster 3 Overview"
+    ]
+  },
+  {
+    "objectID": "chapters/cluster3.html#expected-outputs-and-impact",
+    "href": "chapters/cluster3.html#expected-outputs-and-impact",
+    "title": "Cluster 3",
+    "section": "Expected Outputs and Impact",
+    "text": "Expected Outputs and Impact\nWhat does the Cluster aim to deliver, and how can these outputs support other NSIs?\nPlease provide the links to your Cluster’s repositories.",
+    "crumbs": [
+      "Cluster 3 Overview"
+    ]
+  },
+  {
+    "objectID": "chapters/cluster5.html",
+    "href": "chapters/cluster5.html",
+    "title": "Cluster 5",
+    "section": "",
+    "text": "Which problem does the Cluster address, and why is it relevant for NSIs?",
+    "crumbs": [
+      "Cluster 5 Overview"
+    ]
+  },
+  {
+    "objectID": "chapters/cluster5.html#problem-definition-and-relevance",
+    "href": "chapters/cluster5.html#problem-definition-and-relevance",
+    "title": "Cluster 5",
+    "section": "",
+    "text": "Which problem does the Cluster address, and why is it relevant for NSIs?",
+    "crumbs": [
+      "Cluster 5 Overview"
+    ]
+  },
+  {
+    "objectID": "chapters/cluster5.html#expected-outputs-and-impact",
+    "href": "chapters/cluster5.html#expected-outputs-and-impact",
+    "title": "Cluster 5",
+    "section": "Expected Outputs and Impact",
+    "text": "Expected Outputs and Impact\nWhat does the Cluster aim to deliver, and how can these outputs support other NSIs?\nPlease provide the links to your Cluster’s repositories.",
+    "crumbs": [
+      "Cluster 5 Overview"
     ]
   }
 ]
