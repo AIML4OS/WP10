@@ -3,3 +3,75 @@ title: "How to contribute to WP10?"
 format: html # This qmd file will be compiled as an HTML web page
 ---
 
+The resources developed by **Work Package 10 – “From Text to Code” (WP10)** are primarily intended for **National Statistical Institutes (NSIs)**, both within and outside the **AIML4OS** project.  
+
+If you are not part of the AIML4OS project or the WP10 team but would still like to contribute, please don’t hesitate to reach out to [us](mailto:AIML4OS-WP10@destatis.de)!
+
+
+## Share your code through the AIML4OS Github Organization
+
+All WP10 outputs are made available under the [AIML4OS GitHub Organization](https://github.com/AIML4OS), through the dedicated **“WP10” Team**.
+
+
+### Github Access
+
+To contribute, you must be therefore a member of the **WP10 Team** within the AIML4OS GitHub Organization. If you are not yet a member, please contact the [WP10 Leader](mailto:AIML4OS-WP10@destatis.de) to request access.
+
+
+### Repository Creation
+
+Depending on your contribution, you may:
+
+- Contribute to an **existing** WP10 repository, or
+- Request the creation of a **new repository**.
+
+If you need a new repository, please reach out to the [WP10 Leader](mailto:AIML4OS-WP10@destatis.de) and provide the following information:
+
+- **Cluster name:** the WP10 cluster you wish to contribute to.  
+- **Repository name:** following this naming convention:  
+  `WP10_ClusterX_NamePipelineY`
+
+If you wish to provide a **GitHub Page** and/or link your code to an **Onyxia containerized service**, that’s great!  
+Inform the WP10 Leader, who will create the new repository using one of the official templates provided by WP6:
+
+- [Template for training material in Quarto for R](https://github.com/AIML4OS/AIML4OS-template-quarto-r)  
+- [Template for training material in Quarto for Python](https://github.com/AIML4OS/AIML4OS-template-quarto-python)
+
+For detailed guidance on using these templates, please refer to the [Training Material Starting Pack](https://aiml4os.github.io/training-material-starting-pack/) and its [source code](https://github.com/AIML4OS/training-material-starting-pack).
+
+
+### Push your code
+
+When contributing to an existing repository, please follow these best practices:
+
+1. **Create a new branch** from the main branch.  
+2. **Commit your changes** to this new branch.  
+3. **Submit a pull request (PR)** to merge your branch into the main branch.
+
+Before merging:
+
+- Request a **review** from another contributor in your cluster.  
+- Apply any necessary changes based on their feedback.  
+- Merge only after receiving explicit approval.  
+
+⚠️ **Always follow the “four-eyes principle”** — every PR should be reviewed by at least one other team member before merging. This helps maintain code quality and prevents merge conflicts.
+
+### Quality Guidelines
+
+WP10 defined quality guidelines to structure our work, especially the code shared through Github. 
+
+Please refer to this guidelines presented within the template [Quality Gates Template for WP10 Outputs](https://github.com/AIML4OS/AIML4OS-template-quarto-python/tree/main/ContributorsGuide)
+
+### Data Sharing
+
+WP10 delivers **pipelines and datasets** to support runnable and reproducible workflows. Where possible, **trained model objects** are also shared. When sharing complete input datasets is not feasible, **small representative samples** are provided instead.
+
+All data is stored on **Onyxia’s system**, within a **dedicated WP10 bucket** with restricted access for WP10 members.
+
+WP10 members can upload their datasets and manage access permissions to share data through a **publicly accessible URL**. For detailed guidance on this matter, please refer to the ["Data Storage in WP10" guidelines](https://github.com/AIML4OS/AIML4OS-template-quarto-python/tree/main/ContributorsGuide)
+
+> **To upload data to the WP10 bucket**, you must first **register on Onyxia** and then contact the [WP10 Leader](mailto:AIML4OS-WP10@destatis.de).  
+> Please include your **Onyxia username** so that access can be granted.
+
+> ⚠️ **Be careful:** Do **not** share any **sensitive or confidential data**.
+
