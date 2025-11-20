@@ -137,8 +137,21 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#share-your-code-through-the-aiml4os-github-organization" id="toc-share-your-code-through-the-aiml4os-github-organization" class="nav-link active" data-scroll-target="#share-your-code-through-the-aiml4os-github-organization">Share your code through the AIML4OS Github Organization</a>
+  <ul class="collapse">
+  <li><a href="#github-access" id="toc-github-access" class="nav-link" data-scroll-target="#github-access">Github Access</a></li>
+  <li><a href="#repository-creation" id="toc-repository-creation" class="nav-link" data-scroll-target="#repository-creation">Repository Creation</a></li>
+  <li><a href="#push-your-code" id="toc-push-your-code" class="nav-link" data-scroll-target="#push-your-code">Push your code</a></li>
+  <li><a href="#quality-guidelines" id="toc-quality-guidelines" class="nav-link" data-scroll-target="#quality-guidelines">Quality Guidelines</a></li>
+  <li><a href="#data-sharing" id="toc-data-sharing" class="nav-link" data-scroll-target="#data-sharing">Data Sharing</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/AIML4OS/WP10_template_quarto_python_test/edit/main/chapters/howContribute.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/AIML4OS/WP10_template_quarto_python_test/blob/main/chapters/howContribute.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/AIML4OS/WP10_template_quarto_python_test/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -162,8 +175,79 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p>The resources developed by <strong>Work Package 10 – “From Text to Code” (WP10)</strong> are primarily intended for <strong>National Statistical Institutes (NSIs)</strong>, both within and outside the <strong>AIML4OS</strong> project.</p>
+<p>If you are not part of the AIML4OS project or the WP10 team but would still like to contribute, please don’t hesitate to reach out to <a href="mailto:AIML4OS-WP10@destatis.de">us</a>!</p>
+<section id="share-your-code-through-the-aiml4os-github-organization" class="level2">
+<h2 class="anchored" data-anchor-id="share-your-code-through-the-aiml4os-github-organization">Share your code through the AIML4OS Github Organization</h2>
+<p>All WP10 outputs are made available under the <a href="https://github.com/AIML4OS">AIML4OS GitHub Organization</a>, through the dedicated <strong>“WP10” Team</strong>.</p>
+<section id="github-access" class="level3">
+<h3 class="anchored" data-anchor-id="github-access">Github Access</h3>
+<p>To contribute, you must be therefore a member of the <strong>WP10 Team</strong> within the AIML4OS GitHub Organization. If you are not yet a member, please contact the <a href="mailto:AIML4OS-WP10@destatis.de">WP10 Leader</a> to request access.</p>
+</section>
+<section id="repository-creation" class="level3">
+<h3 class="anchored" data-anchor-id="repository-creation">Repository Creation</h3>
+<p>Depending on your contribution, you may:</p>
+<ul>
+<li>Contribute to an <strong>existing</strong> WP10 repository, or</li>
+<li>Request the creation of a <strong>new repository</strong>.</li>
+</ul>
+<p>If you need a new repository, please reach out to the <a href="mailto:AIML4OS-WP10@destatis.de">WP10 Leader</a> and provide the following information:</p>
+<ul>
+<li><strong>Cluster name:</strong> the WP10 cluster you wish to contribute to.<br>
+</li>
+<li><strong>Repository name:</strong> following this naming convention:<br>
+<code>WP10_ClusterX_NamePipelineY</code></li>
+</ul>
+<p>If you wish to provide a <strong>GitHub Page</strong> and/or link your code to an <strong>Onyxia containerized service</strong>, that’s great!<br>
+Inform the WP10 Leader, who will create the new repository using one of the official templates provided by WP6:</p>
+<ul>
+<li><a href="https://github.com/AIML4OS/AIML4OS-template-quarto-r">Template for training material in Quarto for R</a><br>
+</li>
+<li><a href="https://github.com/AIML4OS/AIML4OS-template-quarto-python">Template for training material in Quarto for Python</a></li>
+</ul>
+<p>For detailed guidance on using these templates, please refer to the <a href="https://aiml4os.github.io/training-material-starting-pack/">Training Material Starting Pack</a> and its <a href="https://github.com/AIML4OS/training-material-starting-pack">source code</a>.</p>
+</section>
+<section id="push-your-code" class="level3">
+<h3 class="anchored" data-anchor-id="push-your-code">Push your code</h3>
+<p>When contributing to an existing repository, please follow these best practices:</p>
+<ol type="1">
+<li><strong>Create a new branch</strong> from the main branch.<br>
+</li>
+<li><strong>Commit your changes</strong> to this new branch.<br>
+</li>
+<li><strong>Submit a pull request (PR)</strong> to merge your branch into the main branch.</li>
+</ol>
+<p>Before merging:</p>
+<ul>
+<li>Request a <strong>review</strong> from another contributor in your cluster.<br>
+</li>
+<li>Apply any necessary changes based on their feedback.<br>
+</li>
+<li>Merge only after receiving explicit approval.</li>
+</ul>
+<p>⚠️ <strong>Always follow the “four-eyes principle”</strong> — every PR should be reviewed by at least one other team member before merging. This helps maintain code quality and prevents merge conflicts.</p>
+</section>
+<section id="quality-guidelines" class="level3">
+<h3 class="anchored" data-anchor-id="quality-guidelines">Quality Guidelines</h3>
+<p>WP10 defined quality guidelines to structure our work, especially the code shared through Github.</p>
+<p>Please refer to this guidelines presented within the template <a href="https://github.com/AIML4OS/AIML4OS-template-quarto-python/tree/main/ContributorsGuide">Quality Gates Template for WP10 Outputs</a></p>
+</section>
+<section id="data-sharing" class="level3">
+<h3 class="anchored" data-anchor-id="data-sharing">Data Sharing</h3>
+<p>WP10 delivers <strong>pipelines and datasets</strong> to support runnable and reproducible workflows. Where possible, <strong>trained model objects</strong> are also shared. When sharing complete input datasets is not feasible, <strong>small representative samples</strong> are provided instead.</p>
+<p>All data is stored on <strong>Onyxia’s system</strong>, within a <strong>dedicated WP10 bucket</strong> with restricted access for WP10 members.</p>
+<p>WP10 members can upload their datasets and manage access permissions to share data through a <strong>publicly accessible URL</strong>. For detailed guidance on this matter, please refer to the <a href="https://github.com/AIML4OS/AIML4OS-template-quarto-python/tree/main/ContributorsGuide">“Data Storage in WP10” guidelines</a></p>
+<blockquote class="blockquote">
+<p><strong>To upload data to the WP10 bucket</strong>, you must first <strong>register on Onyxia</strong> and then contact the <a href="mailto:AIML4OS-WP10@destatis.de">WP10 Leader</a>.<br>
+Please include your <strong>Onyxia username</strong> so that access can be granted.</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>⚠️ <strong>Be careful:</strong> Do <strong>not</strong> share any <strong>sensitive or confidential data</strong>.</p>
+</blockquote>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -580,4 +664,4 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/AIML4OS/WP10_template_quarto_python_test/edit/main/chapters/howContribute.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/AIML4OS/WP10_template_quarto_python_test/blob/main/chapters/howContribute.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/AIML4OS/WP10_template_quarto_python_test/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/AIML4OS/WP10_template_quarto_python_test/edit/main/chapters/howContribute.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/AIML4OS/WP10_template_quarto_python_test/blob/main/chapters/howContribute.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/AIML4OS/WP10_template_quarto_python_test/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>

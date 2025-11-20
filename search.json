@@ -1,5 +1,25 @@
 [
   {
+    "objectID": "chapters/howContribute.html",
+    "href": "chapters/howContribute.html",
+    "title": "How to contribute to WP10?",
+    "section": "",
+    "text": "The resources developed by Work Package 10 – “From Text to Code” (WP10) are primarily intended for National Statistical Institutes (NSIs), both within and outside the AIML4OS project.\nIf you are not part of the AIML4OS project or the WP10 team but would still like to contribute, please don’t hesitate to reach out to us!",
+    "crumbs": [
+      "How to contribute?"
+    ]
+  },
+  {
+    "objectID": "chapters/howContribute.html#share-your-code-through-the-aiml4os-github-organization",
+    "href": "chapters/howContribute.html#share-your-code-through-the-aiml4os-github-organization",
+    "title": "How to contribute to WP10?",
+    "section": "Share your code through the AIML4OS Github Organization",
+    "text": "Share your code through the AIML4OS Github Organization\nAll WP10 outputs are made available under the AIML4OS GitHub Organization, through the dedicated “WP10” Team.\n\nGithub Access\nTo contribute, you must be therefore a member of the WP10 Team within the AIML4OS GitHub Organization. If you are not yet a member, please contact the WP10 Leader to request access.\n\n\nRepository Creation\nDepending on your contribution, you may:\n\nContribute to an existing WP10 repository, or\nRequest the creation of a new repository.\n\nIf you need a new repository, please reach out to the WP10 Leader and provide the following information:\n\nCluster name: the WP10 cluster you wish to contribute to.\n\nRepository name: following this naming convention:\nWP10_ClusterX_NamePipelineY\n\nIf you wish to provide a GitHub Page and/or link your code to an Onyxia containerized service, that’s great!\nInform the WP10 Leader, who will create the new repository using one of the official templates provided by WP6:\n\nTemplate for training material in Quarto for R\n\nTemplate for training material in Quarto for Python\n\nFor detailed guidance on using these templates, please refer to the Training Material Starting Pack and its source code.\n\n\nPush your code\nWhen contributing to an existing repository, please follow these best practices:\n\nCreate a new branch from the main branch.\n\nCommit your changes to this new branch.\n\nSubmit a pull request (PR) to merge your branch into the main branch.\n\nBefore merging:\n\nRequest a review from another contributor in your cluster.\n\nApply any necessary changes based on their feedback.\n\nMerge only after receiving explicit approval.\n\n⚠️ Always follow the “four-eyes principle” — every PR should be reviewed by at least one other team member before merging. This helps maintain code quality and prevents merge conflicts.\n\n\nQuality Guidelines\nWP10 defined quality guidelines to structure our work, especially the code shared through Github.\nPlease refer to this guidelines presented within the template Quality Gates Template for WP10 Outputs\n\n\nData Sharing\nWP10 delivers pipelines and datasets to support runnable and reproducible workflows. Where possible, trained model objects are also shared. When sharing complete input datasets is not feasible, small representative samples are provided instead.\nAll data is stored on Onyxia’s system, within a dedicated WP10 bucket with restricted access for WP10 members.\nWP10 members can upload their datasets and manage access permissions to share data through a publicly accessible URL. For detailed guidance on this matter, please refer to the “Data Storage in WP10” guidelines\n\nTo upload data to the WP10 bucket, you must first register on Onyxia and then contact the WP10 Leader.\nPlease include your Onyxia username so that access can be granted.\n\n\n⚠️ Be careful: Do not share any sensitive or confidential data.",
+    "crumbs": [
+      "How to contribute?"
+    ]
+  },
+  {
     "objectID": "index.html#wp10-goals",
     "href": "index.html#wp10-goals",
     "title": "AIML4OS WP10 From text to code",
