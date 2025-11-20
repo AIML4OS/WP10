@@ -2,9 +2,13 @@ project:
   type: website
   render: # Add HERE new chapters and new notebooks
     - index.qmd
-    - chapters/clusterX.qmd
+    - chapters/cluster1.qmd
+    - chapters/cluster2.qmd
+    - chapters/cluster3.qmd
+    - chapters/cluster4.qmd
+    - chapters/cluster5.qmd
     - chapters/howContribute.qmd
-    #- notebooks/notebook1.qmd
+
 
 website:
   page-navigation: true
@@ -17,8 +21,16 @@ website:
     contents: # Add HERE new chapters (but not the notebooks)
       - href: index.qmd
         text: Introduction
-      - href: chapters/clusterX.qmd
-        text: Cluster X Overview
+      - href: chapters/cluster1.qmd
+        text: Cluster 1 Overview
+      - href: chapters/cluster2.qmd
+        text: Cluster 2 Overview
+      - href: chapters/cluster3.qmd
+        text: Cluster 3 Overview
+      - href: chapters/cluster4.qmd
+        text: Cluster 4 Overview
+      - href: chapters/cluster5.qmd
+        text: Cluster 5 Overview
       - href: chapters/howContribute.qmd
         text: How to contribute?
 
