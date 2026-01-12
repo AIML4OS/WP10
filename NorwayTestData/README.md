@@ -5,10 +5,10 @@ This data is shared under the conditions of the Norwegian public data license: [
 
 There are four Norwegian data shared in the SSPCloud for training and test purposes, of which 3 are currently publically available. These are listed here with further descriptions below:
 
-- [Training data](## Norwegian training and test data) (public access): Data with Norwegian businesses for training purposes.
-- [Test data](## Norwegian training and test data) (public access): Data with Norwegian businesses for testing purposes.
-- [NACE class descriptions](### Class descriptions) (public access): Descriptions of all classes and levels with descriptions in Norwegian. 
-- [NACE index](### NACE Index) (restricted): Draft Norwegian translation of the proposed draft index for the European NACE rev.2.1.
+- [Training data](##norwegian-training-and-test-data) (public access): Data with Norwegian businesses for training purposes.
+- [Test data](##norwegian-training-and-test-data) (public access): Data with Norwegian businesses for testing purposes.
+- [NACE class descriptions](###class-descriptions) (public access): Descriptions of all classes and levels with descriptions in Norwegian. 
+- [NACE index](###nace-index) (restricted): Draft Norwegian translation of the proposed draft index for the European NACE rev.2.1.
 
 ## Norwegian training and test data
 ### Units
