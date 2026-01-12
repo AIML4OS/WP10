@@ -3,6 +3,13 @@ This folder contatins code to collect and save data from the [Norwegian business
 
 This data is shared under the conditions of the Norwegian public data license: [Norsk lisens for offentlige data](https://data.norge.no/nlod/no).
 
+There are four Norwegian data shared in the SSPCloud for training and test purposes, of which 3 are currently publically available. These are listed here with further descriptions below:
+
+- [Training data](## Norwegian training and test data) (public access): Data with Norwegian businesses for training purposes.
+- [Test data](## Norwegian training and test data) (public access): Data with Norwegian businesses for testing purposes.
+- [NACE class descriptions](### Class descriptions) (public access): Descriptions of all classes and levels with descriptions in Norwegian. 
+- [NACE index](### NACE Index) (restricted): Draft Norwegian translation of the proposed draft index for the European NACE rev.2.1.
+
 ## Norwegian training and test data
 ### Units
 The python script `create_data_norway.py´ creates a training (80 percent) and test (20 percent) dataset. The units are legal entities in the Norwegian business register that contain a valid NACE classification (rev.2.1).
@@ -43,8 +50,8 @@ test = pd.read_parquet(test_path)
 
 Both training and test data is publically available so you can also read the data in environments outside of SSPCloud with the following URLs:
 
-- [https://minio.lab.sspcloud.fr/projet-aiml4os-wp10/NorwayData/test_norwaydata.parquet](https://minio.lab.sspcloud.fr/projet-aiml4os-wp10/NorwayData/test_norwaydata_2025-12-15.parquet)
-- [https://minio.lab.sspcloud.fr/projet-aiml4os-wp10/NorwayData/train_norwaydata.parquet](https://minio.lab.sspcloud.fr/projet-aiml4os-wp10/NorwayData/train_norwaydata_2025-12-15.parquet)
+- [https://minio.lab.sspcloud.fr/projet-aiml4os-wp10/NorwayData/test_norwaydata_2025-12-15.parquet](https://minio.lab.sspcloud.fr/projet-aiml4os-wp10/NorwayData/test_norwaydata_2025-12-15.parquet)
+- [https://minio.lab.sspcloud.fr/projet-aiml4os-wp10/NorwayData/train_norwaydata_2025-12-15.parquet](https://minio.lab.sspcloud.fr/projet-aiml4os-wp10/NorwayData/train_norwaydata_2025-12-15.parquet)
 
 ## Addititional data
 In addition to the main training and test data, two additional data are available; one with class descriptions and one with draft index items translated to Norwegian.
