@@ -12,7 +12,7 @@ There are four Norwegian data shared in the SSPCloud for training and test purpo
 
 ## Norwegian training and test data
 ### Units
-The python script `create_data_norway.py´ creates a training (80 percent) and test (20 percent) dataset. The units are legal entities in the Norwegian business register that contain a valid NACE classification (rev.2.1).
+The python script `create_data_norway.py` creates a training (80 percent) and test (20 percent) dataset. The units are legal entities in the Norwegian business register that contain a valid NACE classification (rev.2.1).
 
 The data has been extracted from the register on the 15th December 2025 and includes 436 001 units in the training data and 108 995 in the test data. 
 
@@ -57,7 +57,7 @@ Both training and test data is publically available so you can also read the dat
 In addition to the main training and test data, two additional data are available; one with class descriptions and one with draft index items translated to Norwegian.
 
 ### Class descriptions
-The data ´class_codes_and_description.csv´ contains descriptions of the NACE rev.2.1 classes. This includes NACE codes, names and descriptions of all the 5 levels in the Norwegian NACE classifications. The data is collected from [https://www.ssb.no/klass/klassifikasjoner/6](https://www.ssb.no/klass/klassifikasjoner/6) and includes the columns: code, parentCode, level, name, shortName, notes, valideFrom and validTo. The column "notes" contains class descriptions in Norwegian, for example what is and isn't included in the groups. 
+The data `class_codes_and_description.csv` contains descriptions of the NACE rev.2.1 classes. This includes NACE codes, names and descriptions of all the 5 levels in the Norwegian NACE classifications. The data is collected from [https://www.ssb.no/klass/klassifikasjoner/6](https://www.ssb.no/klass/klassifikasjoner/6) and includes the columns: code, parentCode, level, name, shortName, notes, valideFrom and validTo. The column "notes" contains class descriptions in Norwegian, for example what is and isn't included in the groups. 
 
 ### NACE Index
-The data ´nace_index_rev.2.1_norwegian_draft.csv´ contains an automatic translation (using deepl) of the draft index for the European NACE rev.2.1. This is a draft and is currently not available outside the WP10 SSPCloud environment. The data includes columns: CODE, INDEX_ENTRY, KEYWORD_NB, RECONSTRUCTED_ENTRY_NB
+The data `nace_index_rev.2.1_norwegian_draft.csv` contains an automatic translation (using deepl) of the draft index for the European NACE rev.2.1. This is a draft and is currently not available outside the WP10 SSPCloud environment. The data includes columns: CODE, INDEX_ENTRY, KEYWORD_NB, RECONSTRUCTED_ENTRY_NB
