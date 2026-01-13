@@ -107,6 +107,7 @@ def process_csv(csv_filename: str, min_nace_count: int = 0) -> pd.DataFrame:
     # Rename variables
     rename_dict = {
         "navn":"company_name",
+        "maalform":"language",
         "organisasjonsnummer":"orgnr",
         "organisasjonsform.kode":"orgform",
         'naeringskode1.kode':"nace_21_code",
@@ -131,7 +132,7 @@ def process_csv(csv_filename: str, min_nace_count: int = 0) -> pd.DataFrame:
     df["orgform_name_nb"] = get_name(df.orgform, 35, 1, language = "nb")
 
     # Order columns
-    column_order = ["orgnr", "company_name", "company_activity", "company_purpose",
+    column_order = ["orgnr", "company_name", "company_activity", "company_purpose", "language",
                     "number_of_employees", "orgform", "orgform_name_nb", "orgform_name_en", "date_of_incorporation", "website",
                     "sector_code", "sector_name_nb", "sector_name_en",
                     "nace_21_code", "nace_21_name_nb", "nace_21_name_en"

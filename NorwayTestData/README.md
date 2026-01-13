@@ -3,18 +3,18 @@ This folder contatins code to collect and save data from the [Norwegian business
 
 This data is shared under the conditions of the Norwegian public data license: [Norsk lisens for offentlige data](https://data.norge.no/nlod/no).
 
-There are four Norwegian data shared in the SSPCloud for training and test purposes, of which 3 are currently publically available. These are listed here with further descriptions below:
+There are six Norwegian data shared in the SSPCloud for training and test purposes, of which 5 are currently publically available. These are listed here with further descriptions below:
 
 - [Training data](#norwegian-training-and-test-data) (public access): Data with Norwegian businesses for training purposes.
 - [Test data](#norwegian-training-and-test-data) (public access): Data with Norwegian businesses for testing purposes.
-- [NACE class descriptions](#class-descriptions) (public access): Descriptions of all classes and levels with descriptions in Norwegian. 
-- [NACE index](#nace-index) (restricted): Draft Norwegian translation of the proposed draft index for the European NACE rev.2.1.
+- [NACE class descriptions](#class-description-files) (public access): Three files with descriptions of all classes and levels with descriptions. There is one file for Norwegian Bokmål, one for Norwegian Nynorsk and one for English class names.
+- [NACE index](#nace-index) (restricted): Draft Norwegian (Bokmål) translation of the proposed draft index for the European NACE rev.2.1.
 
 ## Norwegian training and test data
 ### Units
 The python script `create_data_norway.py` creates a training (80 percent) and test (20 percent) dataset. The units are legal entities in the Norwegian business register that contain a valid NACE classification (rev.2.1).
 
-The data has been extracted from the register on the 15th December 2025 and includes 436 001 units in the training data and 108 995 in the test data. 
+The data has been extracted from the register on the 13th January 2026 and includes 440 746 units in the training data and 110 182 in the test data. 
 
 ### Variables
 The following variables are included in the data:
@@ -23,6 +23,7 @@ The following variables are included in the data:
 - company_name: (str) Name of the company.
 - company_activity: (str) General description of the activity of the company.
 - company_purpose: (str) Formal statutory purpose for the company (If available).
+- language: (str) The official Norwegian language used in the company. Either 'Bokmål' or 'Nynorsk'.
 - number_of_employees: (int) Number of registered employees.
 - orgform: (str) The form of the organisation. See [Classification of Legal form](https://www.ssb.no/klass/klassifikasjoner/35) for more details.
 - orgform_name_nb: (str) Norwegian name of the organistional form.
@@ -41,23 +42,34 @@ All Norwegian data is saved in the s3 folder `projet-aiml4os-wp10/NorwayData`. T
 ```
 import pandas as pd
 
-train_path = "https://minio.lab.sspcloud.fr/projet-aiml4os-wp10/NorwayData/train_norwaydata_2025-12-15.parquet"
-test_path = "https://minio.lab.sspcloud.fr/projet-aiml4os-wp10/NorwayData/test_norwaydata_2025-12-15.parquet"
+train_path = "https://minio.lab.sspcloud.fr/projet-aiml4os-wp10/NorwayData/train_norwaydata_2026-01-13.parquet"
+test_path = "https://minio.lab.sspcloud.fr/projet-aiml4os-wp10/NorwayData/test_norwaydata_2026-01-13.parquet"
 
 train = pd.read_parquet(train_path)
 test = pd.read_parquet(test_path)
 ```
 
-Both training and test data is publically available so you can also read the data in environments outside of SSPCloud with the following URLs:
-
-- [https://minio.lab.sspcloud.fr/projet-aiml4os-wp10/NorwayData/test_norwaydata_2025-12-15.parquet](https://minio.lab.sspcloud.fr/projet-aiml4os-wp10/NorwayData/test_norwaydata_2025-12-15.parquet)
-- [https://minio.lab.sspcloud.fr/projet-aiml4os-wp10/NorwayData/train_norwaydata_2025-12-15.parquet](https://minio.lab.sspcloud.fr/projet-aiml4os-wp10/NorwayData/train_norwaydata_2025-12-15.parquet)
+Both training and test data is publically available so you can read the data in environments outside of SSPCloud with the above code.
 
 ## Addititional data
-In addition to the main training and test data, two additional data are available; one with class descriptions and one with draft index items translated to Norwegian.
+In addition to the main training and test data, four additional data are available; class descriptions in Norwegian Bokmål, Norwegian Nynorsk and English, and one with draft index items translated to Norwegian Bokmål.
 
-### Class descriptions
-The data `class_codes_and_description.csv` contains descriptions of the NACE rev.2.1 classes. This includes NACE codes, names and descriptions of all the 5 levels in the Norwegian NACE classifications. The data is collected from [https://www.ssb.no/klass/klassifikasjoner/6](https://www.ssb.no/klass/klassifikasjoner/6) and includes the columns: code, parentCode, level, name, shortName, notes, valideFrom and validTo. The column "notes" contains class descriptions in Norwegian, for example what is and isn't included in the groups. 
+### Class description files
+The data `class_codes` files contain names and descriptions of the NACE rev.2.1 classes. There are three files:
+
+- `class_codes_nb.csv`: Class codes, names and descriptions in Bokmål
+- `class_codes_nn.csv`: Class codes and names in Nynorsk
+- `class:codes_en.csv`: Class codes and names in English
+  
+The files include NACE codes, names and descriptions of all the 5 levels in the Norwegian NACE classifications. The metadata is collected from [https://www.ssb.no/klass/klassifikasjoner/6](https://www.ssb.no/klass/klassifikasjoner/6) and includes the columns: code, parentCode, level, name, shortName, notes. The column "notes" contains class descriptions in Norwegian (Bokmål only), for example what is and isn't included in the groups. The following code can be used to read the class names and descriptions
+
+```
+import pandas as pd
+
+lang = "en"
+class_path = f"https://minio.lab.sspcloud.fr/projet-aiml4os-wp10/NorwayData/class_codes_{lang}.csv"
+class_names = pd.read_csv(class_path)
+```
 
 ### NACE Index
 The data `nace_index_rev.2.1_norwegian_draft.csv` contains an automatic translation (using deepl) of the draft index for the European NACE rev.2.1. This is a draft and is currently not available outside the WP10 SSPCloud environment. The data includes columns: CODE, INDEX_ENTRY, KEYWORD_NB, RECONSTRUCTED_ENTRY_NB
