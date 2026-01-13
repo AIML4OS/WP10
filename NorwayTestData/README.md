@@ -21,8 +21,8 @@ The following variables are included in the data:
 
 - orgnr: (int) Identification number for the company.
 - company_name: (str) Name of the company.
-- company_activity: (str) General description of the activity of the company.
-- company_purpose: (str) Formal statutory purpose for the company (If available).
+- company_activity: (str) General description of the activity of the company (Bokmål or Nynorsk).
+- company_purpose: (str) Formal statutory purpose for the company (Bokmål or Nynorsk). This is not available for all companies.
 - language: (str) The official Norwegian language used in the company. Either 'Bokmål' or 'Nynorsk'.
 - number_of_employees: (int) Number of registered employees.
 - orgform: (str) The form of the organisation. See [Classification of Legal form](https://www.ssb.no/klass/klassifikasjoner/35) for more details.
