@@ -1,12 +1,33 @@
 ---
-title: "Cluster 5"
+title: "Cluster 5 - Automatic text recoding under classification updates"
 format: html # This qmd file will be compiled as an HTML web page
 ---
 
 ## Problem Definition and Relevance
-Which problem does the Cluster address, and why is it relevant for NSIs?
 
-## Expected Outputs and Impact
-What does the Cluster aim to deliver, and how can these outputs support other NSIs?
+National statistical institutes (NSIs) must align their statistics with international standards. Whether using the International Standard Classification of Occupations (ISCO), the Statistical Classification of Economic Activities in the European Community (NACE), or the Classification of Individual Consumption According to Purpose (COICOP), they all face the common task of assigning observations to shared classification systems. These international hierarchical standards must be revised periodically to reflect changes in economic activity and society, but such revisions create significant operational challenges for statistical offices.  
 
-Please provide the links to your Cluster's repositories.  
+The ongoing revision of NACE provides a clear illustration of these challenges. NACE is the hierarchical European statistical classification of economic activities (Commission, 2025). In 2022, Revision 2.1 of the standard was formally adopted (European Commission, 2023). Its implementation began in 2025 in most European countries and will continue over several years, extending until 2029 in some cases.  
+
+This cluster brings together contributions from Statistics Norway and the French National Institute of Statistics and Economic Studies (Insee). Both institutions face the same operational challenge, namely the transition from NACE revision 2.0 to NACE revision 2.1, and both have invested in automated classification methods to handle textual descriptions of business activity at scale. 
+
+The cluster focuses on the automatic recoding of textual labels when the target nomenclature itself changes. The use case studied is the assignment of a principal economic activity code to enterprises during a nomenclature transition. The classification system involved is NACE, in its national implementations (NAF 2025 in France, the Norwegian business register classification at Statistics Norway), with a particular focus on the cases where the mapping between the old and the new classification is ambiguous, such as one-to-many or many-to-many mappings. 
+
+The problem matters for official statistics for three reasons. First, the activity code is a structural variable that conditions sample design, statistical production and the consistency of long time series. Second, both countries receive a steady inflow of free text descriptions filled in by declarants, which cannot be coded by deterministic rules alone. Third, the transition to NACE 2.1 disrupts the historical labelled corpora used to train classification models, since past observations need to be reclassified before they can support model retraining or back classification. 
+
+This transition of the business register to a new NACE standard involves four main classification tasks. The first is the re-coding of all units in the existing business register to the new standard. This is typically carried out using a combination of methods, including surveys, rule-based approaches, data integration, manual classification, and increasingly, advanced machine learning models. The second task is the retraining of classification models to enable direct classification of new units under the updated standard. As classification models are becoming more widely used in NSIs, these models must be carefully tested and adapted to ensure their performance and reliability under the revised standard. During the transition period, back-classification is also required when new units are classified directly according to the new standard. Since the transition to a revised NACE revision often spans over several years, in most NSIs, it is essential for the business register to maintain both standards concurrently to support the continued production of all official statistics. Finally, back casting is necessary to enable comparability of time series over extended periods. While this can be done at the micro level, it is more commonly carried out using macro-level methods, and is therefore not addressed further in this report. 
+
+The French case covers the forward conversion of the historical stock from NACE 2.0 to NACE 2.1, combined with the modernisation of the production system Sirene 4. The Norwegian case covers the back-classification from NACE 2.1 to NACE 2.0 during the transition period that runs until 2029. Together they illustrate the two directions a national institute often has to manage during a revision.
+
+## Cluster Outputs and Useful Links
+
+This cluster aims to deliver following main outputs: 
+
+- Literature review on the topic: ([link](https://github.com/AIML4OS/WP10/tree/main/LiteratureReviews){target="_blank"})
+
+- Methodological report presenting the results obtained by the cluster: ([link](https://github.com/AIML4OS/WP10/tree/main/ClustersReport){target="_blank"})
+
+- Open-source code developed during the project and shared on GitHub - Statistics Norway: ([link](https://github.com/AIML4OS/WP10-Cluster5-backclassification){target="_blank"})
+
+- Open-source code developed during the project and shared on GitHub - Insee: ([link](https://github.com/AIML4OS/WP10-Cluster5-nace-revision){target="_blank"})
+
