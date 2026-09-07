@@ -182,7 +182,7 @@ WP10 follows a **multi-pronged, collaborative structure** organized into five cl
 |----------|--------------|----------|-----------|
 | **Cluster 1** | <span class="cluster-1">National Institute of Statistics (Spain), Destatis (Germany)</span> | Insufficient training data | Generate synthetic training material using LLMs |
 | **Cluster 2** | <span class="cluster-2">Statistics Norway, Statistics Poland, Statistics Austria</span> | Addressing the complexity and nuances of natural language | Using RAG, LLMs and Transformer for statistical classification systems |
-| **Cluster 3** | <span class="cluster-3">Statistics Austria, Statistics Denmark</span> | Traditional models neglect hierarchical structures | Apply hierarchical methods for text classification |
+| **Cluster 3** | <span class="cluster-3">Statistics Austria, Statistics Denmark</span> | Traditional models neglect hierarchical structures | Hierarchical Models for Text Classification |
 | **Cluster 4** | <span class="cluster-4">Insee (France), Statistics Austria, Destatis (Germany)</span> | Challenges in deploying and maintaining classification models in production environments | Providing MLOps Guidelines in the text-to-code context |
 | **Cluster 5** | <span class="cluster-5">Insee (France), Statistics Norway, Statistics Netherlands</span> | Adapting to classification system revisions | Automatic text recoding under classification updates |
 
