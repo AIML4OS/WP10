@@ -21,7 +21,7 @@ The French case covers the forward conversion of the historical stock from NACE 
 
 ## Cluster Outputs and Useful Links
 
-This cluster aims to deliver three main outputs: 
+This cluster aims to deliver following main outputs: 
 
 - Literature review on the topic: ([link](https://github.com/AIML4OS/WP10/tree/main/LiteratureReviews){target="_blank"})
 

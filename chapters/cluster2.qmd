@@ -25,7 +25,7 @@ Across the cluster, the expected benefits of modern AI/ML approaches include imp
 
 ## Cluster Outputs and Useful Links
 
-This cluster aims to deliver three main outputs: 
+This cluster aims to deliver following main outputs: 
 
 - Literature review on the topic: ([link](https://github.com/AIML4OS/WP10/tree/main/LiteratureReviews){target="_blank"})
 
