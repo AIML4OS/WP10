@@ -1,5 +1,5 @@
 ---
-title: "Cluster 3"
+title: "Cluster 3 - Hierarchical Models for Text Classification "
 format: html # This qmd file will be compiled as an HTML web page
 ---
 
