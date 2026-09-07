@@ -165,6 +165,14 @@ Rather than enforcing a single unified pipeline, the project aims to **document 
 The clusters' reports will be made available here: *clusters reports* ([link](https://blabla){target="_blank"}).
 All experimental code and resources are available through GitHub repositories linked in the cluster sections below.
 
+### **Cross-Cutting Contributions — Observer Countries**
+
+In parallel with the activities carried out across Phases 1 and 2, WP10 benefited from the active engagement of several observer countries. Beyond participating in meetings and providing valuable feedback and input throughout the project, these countries made concrete contributions to the resources developed for the wider NSI community. 
+
+In particular, STATEC Luxembourg, Istat (Italy), and INE Spain contributed to extending the practical knowledge available on text classification in the text-to-code context by developing a dedicated tutorial on text classification, providing practical guidance and examples that can be used by NSIs as a complementary resource to the work conducted within WP10. 
+
+The tutorial is available on GitHub: Text Classification Tutorial: ([link](https://github.com/AIML4OS/WP10_tutorial_text_classification){target="_blank"})
+
 ---
 ## Clusters Structure
 
@@ -173,8 +181,8 @@ WP10 follows a **multi-pronged, collaborative structure** organized into five cl
 | Cluster | Participants | Problem | Solution |
 |----------|--------------|----------|-----------|
 | **Cluster 1** | <span class="cluster-1">National Institute of Statistics (Spain), Destatis (Germany)</span> | Insufficient training data | Generate synthetic training material using LLMs |
-| **Cluster 2** | <span class="cluster-2">Statistics Norway, Statistics Poland, Statistics Austria</span> | Addressing the complexity and nuances of natural language | Use LLMs and RAGs for text classification |
+| **Cluster 2** | <span class="cluster-2">Statistics Norway, Statistics Poland, Statistics Austria</span> | Addressing the complexity and nuances of natural language | Using RAG, LLMs and Transformer for statistical classification systems |
 | **Cluster 3** | <span class="cluster-3">Statistics Austria, Statistics Denmark</span> | Traditional models neglect hierarchical structures | Apply hierarchical methods for text classification |
-| **Cluster 4** | <span class="cluster-4">Insee (France), Statistics Austria, Destatis (Germany)</span> | Challenges in deploying and maintaining classification models in production environments | Provide guidelines for model deployment and monitoring |
-| **Cluster 5** | <span class="cluster-5">Insee (France), Statistics Norway, Statistics Netherlands</span> | Adapting to classification system revisions | Use LLMs to handle the next NACE revision |
+| **Cluster 4** | <span class="cluster-4">Insee (France), Statistics Austria, Destatis (Germany)</span> | Challenges in deploying and maintaining classification models in production environments | Providing MLOps Guidelines in the text-to-code context |
+| **Cluster 5** | <span class="cluster-5">Insee (France), Statistics Norway, Statistics Netherlands</span> | Adapting to classification system revisions | Automatic text recoding under classification updates |
 

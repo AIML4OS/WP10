@@ -1,12 +1,20 @@
 ---
-title: "Cluster 4"
+title: "Cluster 4 - Providing MLOps Guidelines in the text-to-code context"
 format: html # This qmd file will be compiled as an HTML web page
 ---
 
 ## Problem Definition and Relevance
-Which problem does the Cluster address, and why is it relevant for NSIs?
 
-## Expected Outputs and Impact
-What does the Cluster aim to deliver, and how can these outputs support other NSIs?
+Deploying and maintaining machine learning models in production presents specific challenges for National Statistical Institutes (NSIs), particularly when models are used for classification and coding tasks. 
 
-Please provide the links to your Cluster's repositories.  
+Unlike conventional software systems, machine learning models depend on data that may evolve over time, require regular retraining, and can experience performance degradation as classifications, coding practices, or input data change. Ensuring reproducibility, data and model versioning, continuous monitoring, validation, and reliable deployment therefore becomes essential to maintain the quality and stability of statistical classification systems. 
+
+Cluster 4 within WP10 addresses these challenges by developing practical MLOps guidelines for the deployment and monitoring of machine learning models in text-to-code applications. The cluster will provide a step-by-step guide covering the main building blocks of an MLOps pipeline, from data and model management to testing, deployment, monitoring, and continuous improvement. The guidelines will be informed by practical experiences and example implementations from three National Statistical Institutes—Insee, the German Federal Statistical Office, and Statistics Austria—with the aim of providing actionable recommendations that can support NSIs in building reliable, maintainable, and scalable ML-based classification systems in the text-to-code context.
+
+## Cluster Outputs and Useful Links
+
+This cluster aims to deliver three main outputs: 
+
+- Literature review on the topic: ([link](https://github.com/AIML4OS/WP10/tree/main/LiteratureReviews){target="_blank"})
+
+- MLOps Guidelines within the text-to-code context: ([link](https://github.com/AIML4OS/WP10_Cluster4_MLOps){target="_blank"})

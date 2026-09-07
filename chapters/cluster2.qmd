@@ -1,12 +1,40 @@
 ---
-title: "Cluster 2"
+title: "Cluster 2 - Using RAG, LLMs and Transformers for statistical classification systems"
 format: html # This qmd file will be compiled as an HTML web page
 ---
 
 ## Problem Definition and Relevance
-Which problem does the Cluster address, and why is it relevant for NSIs?
 
-## Expected Outputs and Impact
-What does the Cluster aim to deliver, and how can these outputs support other NSIs?
+The work of Cluster 2 focuses on the use of artificial intelligence and machine learning for the automatic classification of textual information into official statistical classifications, with a particular emphasis on NACE and related coding systems. The cluster brings together experiences and experiments from several national statistical institutes, including Statistics Poland, Statistics Austria, Statistics Norway and Statistics Netherlands, each working with different data sources, infrastructures and use cases but facing closely related methodological challenges. 
 
-Please provide the links to your Cluster's repositories.  
+Statistics Austria has developed and deployed text classification models in production for several major coding systems: International Standard Classification of Occupations (ISCO), International Standard Classification of Education (ISCED), Nomenclature of Economic Activities (NACE), Österreichische Konsumerhebung Lebensmittel- und Ausgabenpositionen (ÖKLAP) / Classification of Individual Consumption According to Purpose (COICOP). These models classify survey responses into standardized codes and are already integrated into operational workflows. Statistics Poland focuses on NACE (PKD‑) classification based on company website descriptions, exploring both traditional machine learning models and large language models, and investigating how synthetic data and modern language models can improve performance and scalability. Statistics Norway investigates the use of pretrained large language models for classifying enterprises to the new 5‑digit NACE Rev. 2.1 codes, using text from the Norwegian business register and company websites. Statistics Netherlands developed Dabling, a generic text classification tool using a LLM in combination with labelled training data. The tool is classification-agnostics; however, in this project it has been applied to NACE. 
+
+Across these contributions, the cluster addresses a common sub‑topic: how to move “from text to code” by leveraging AI/ML methods for automatic or semi‑automatic assignment of standardized statistical classifications. The primary use cases include coding survey responses, classifying business register units, and assigning NACE or related codes based on unstructured textual descriptions such as activity descriptions, company purposes, or website content. While NACE is the central classification system studied, the approaches are also applied to ISCO, ISCED, COICOP/ÖKLAP and other hierarchical coding schemes. 
+
+The key problem addressed by this cluster is how to design robust, accurate and scalable classification pipelines that can cope with large numbers of classes, heterogeneous and often noisy text, and limited labelled training data, while remaining suitable for official statistics production. This problem is highly relevant for official statistics because many core outputs – such as labour market, education, business and consumption statistics – depend on consistent and timely coding to standard classifications. The cluster uses a range of concrete use cases to test proposed approaches: production‑grade survey coding in Austria, NACE classification of enterprises based on web data in Poland, NACE Rev. 2.1 classification with pretrained LLMs in Norway, and NACE in the Netherlands. Together, these cases provide a rich empirical basis for assessing the potential and limitations of AI/ML methods for text‑to‑code tasks in official statistics. 
+
+The classification of textual information into standardized statistical codes remains a core but resource‑intensive task in official statistics. Across national statistical institutes, traditional workflows have relied heavily on manual coding or exact dictionary matching, both of which are difficult to scale as data volumes grow and as new data sources – such as business registers, administrative systems or company websites – introduce increasingly heterogeneous and unstructured text. These limitations motivate the exploration of AI/ML methods that can improve accuracy, reduce manual workload and enable more timely production of statistics. 
+
+A key challenge is the nature of the classification tasks themselves. Systems such as NACE, ISCO, ISCED or COICOP contain hundreds of classes, often with subtle semantic differences and hierarchical structures. Many text inputs are short, ambiguous or incomplete, making it difficult even for human coders to assign a single correct label. In the case of NACE, the problem is amplified by the large number of categories and the scarcity of labelled training data, especially for rare or highly specific classes. Imbalanced datasets, noisy text from websites, and multilingual content further complicate the task. 
+
+Existing approaches also face methodological constraints. Traditional machine learning models require large, well‑labelled datasets and cannot easily exploit unstructured or multilingual text. Dictionary‑based methods are fast but brittle, failing when descriptions deviate from predefined terminology. Neural network models, while powerful, require careful design to avoid overfitting when training data is limited. Moreover, most current production systems treat classification as a flat multi‑class problem, ignoring the hierarchical nature of coding systems, which can lead to suboptimal predictions. 
+
+Large language models (LLMs) and transformer‑based architectures offer new opportunities to address these limitations. They can interpret unstructured text, operate effectively with limited labelled data, and support advanced techniques such as summarisation, translation, retrieval‑augmented generation (RAG) and few‑shot prompting. The generic applicability of these techniques might help create more generic classification systems. However, their use introduces new questions: how to design prompts, how to select relevant input variables, how to ensure reliable retrieval in RAG setups, and how to balance model size, performance and computational cost. Fine‑tuning methods such as LoRA provide additional flexibility but require empirical validation. 
+
+Across the cluster, the expected benefits of modern AI/ML approaches include improved accuracy, greater robustness to noisy or multilingual text, better scalability, and substantial reductions in manual coding effort. The use cases explored – survey response coding in Austria, NACE classification of company websites in Poland, NACE Rev. 2.1 classification with pretrained LLMs in Norway, and NACE in the Netherlands – demonstrate both the potential and the remaining challenges of applying these methods in official statistics. 
+
+## Cluster Outputs and Useful Links
+
+This cluster aims to deliver three main outputs: 
+
+- Literature review on the topic: ([link](https://github.com/AIML4OS/WP10/tree/main/LiteratureReviews){target="_blank"})
+
+- Methodological report presenting the results obtained by the cluster: ([link](https://github.com/AIML4OS/WP10/tree/main/ClustersReport){target="_blank"})
+
+- Open-source code developed during the project and shared on GitHub - Statistics Norway: ([link](https://github.com/AIML4OS/WP10-Cluster2-RAG){target="_blank"})
+
+- Open-source code developed during the project and shared on GitHub - Statistics Poland: ([link](https://github.com/AIML4OS/WP10_Cluster2_NACEClassification_PL){target="_blank"})
+
+- Open-source code developed during the project and shared on GitHub - Statistics Austria: ([link](https://github.com/AIML4OS/WP10_Cluster2_TransformerClassification){target="_blank"})
+
+- Open-source code developed during the project and shared on GitHub - Statistics Netherlands: ([link](https://github.com/SNStatComp/dabling){target="_blank"})
